@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniature Collection by MR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="miniatures.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Miniature Collection</h1>
+    <div id="miniature-stats"></div>
+
+    <div id="search-form">
+        <input type="text" id="name" placeholder="Name (contains)">
+        <select id="size">
+            <option value="">Size</option>
+            <option value="tiny">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="huge">Huge</option>
+            <option value="gargantuan">Gargantuan</option>
+        </select>
+        <input type="text" id="race" placeholder="Race (Dwarf, elf...)">
+        <input type="text" id="subrace" placeholder="Subrace (High Elf, Hill Dwarf...)">
+        <input type="text" id="creatureType" placeholder="Creature Type, (Undead, beast...)">
+        <input type="text" id="gender" placeholder="Gender (Male, Female...)">
+        <input type="text" id="class" placeholder="Class, (Fighter, Wizard...)">
+        <input type="text" id="weapon" placeholder="Weapon or Equipment (Axe, Bow...)">
+        <input type="text" id="armor" placeholder="Armor Type (Light, Heavy...)">
+        <input type="text" id="features" placeholder="Features (Wings, Claws...)">
+        <button id="reset" onclick="reset()">Reset</button>
+        <button id="search" onclick="search()">Search</button>
+
+        <div>
+            <select id="sort-after">
+            <option value="name">Name</option>
+            <option value="size">Size</option>
+            <option value="creatureType">Creature Type</option>
+            <!-- Add more options here for other tags -->
+            </select>
+            <button id="sort-button">Sort After</button>
+        </div>  
+        <!--
+        <input type="text" id="monster-details" placeholder="Monster details (optional)">
+        <button id="generate" onclick="generateStatblock()">Generate Statblock</button>
+        -->
+    </div>
+    <div id="none">
+        <h2>No results found</h2>
+    </div>
+    <div id="grid">
+        <!-- JavaScript does this -->
+    </div>
+</body>
+</html>
