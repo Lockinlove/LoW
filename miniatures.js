@@ -397,7 +397,7 @@ window.miniatures = [
     {
       src: 'Images/Miniatures/Knight_1.png',
       name: 'Knight',
-      quantity: 'Quantity: 4',
+      quantity: 'Quantity: 5',
       tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Male', 'Weapon: Sword', 'Armor: Heavy', 'Features: Action Surge, Second Wind'],
       location: 'Location: Knights'
     },
@@ -701,6 +701,48 @@ window.miniatures = [
       quantity: 'Quantity: 1',
       tags: ['Race: Demon', 'Creature Type: Fiend', 'Size: Huge', 'Gender: Male', 'Weapon: Axe', 'Armor: Natural', 'Features: Flying'],
       location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/HumanWizard_1.png',
+      name: 'Human Wizard',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Wizard', 'Gender: Male', 'Weapon: Staff', 'Armor: Light', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Pug_1.png',
+      name: 'Pug',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Pug', 'Creature Type: Beast', 'Size: Small', 'Weapon: Lasergun'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/DwarfChef_1.png',
+      name: 'Dwarf Chef',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Dwarf', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Stick', 'Features: Culinary Expertise'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Werebear_1.png',
+      name: 'Werebear',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Werebear', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Axe', 'Armor: Medium', 'Features: Shapechanger'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/HumanTavernCleaner_1.png',
+      name: 'Human Tavern Cleaner',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Features: Cleaning Tools'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/DwarfFighter_1.png',
+      name: 'Dwarf Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Dwarf', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Female', 'Weapon: Hammer', 'Armor: Heavy'],
+      location: 'Location: NPCs'
     },
   ];
 
