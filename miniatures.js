@@ -151,7 +151,7 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Wareowl_1.png',
-      name: 'Wareowl',
+      name: 'Wereowl',
       quantity: 'Quantity: 2',
       tags: ['Race: Wereowl', 'Creature Type: Humanoid', 'Size: Large', 'Weapon: Staff', 'Features: Shapeshift, Magic Resistance, Night Vision, Spellcasting'],
       location: 'Location: Monsters/Creatures'
@@ -165,9 +165,9 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Weredog_1.png',
-      name: 'Weredog',
+      name: 'Jackelwere',
       quantity: 'Quantity: 1',
-      tags: ['Race: Weredog', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Cleric', 'Weapon: Staff', 'Features: Shapeshift, Magic Resistance, Divine Magic'],
+      tags: ['Race: Jackelwere', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Cleric', 'Weapon: Staff', 'Features: Shapeshift, Magic Resistance, Divine Magic'],
       location: 'Location: Eqyptian'
     },
     {
@@ -354,31 +354,31 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Warewolf_1.png',
-      name: 'Warewolf',
+      name: 'Werewolf',
       quantity: 'Quantity: 1',
       tags: ['Race: Werewolf', 'Creature Type: Humanoid', 'Size: Medium', 'Features: Shapeshift, Keen Hearing, Keen Smell'],
-      location: 'Location: Warewolves'
+      location: 'Location: Werewolves'
     },
     {
       src: 'Images/Miniatures/Warewolf_2.png',
-      name: 'Warewolf',
+      name: 'Werewolf',
       quantity: 'Quantity: 1',
       tags: ['Race: Werewolf', 'Creature Type: Humanoid', 'Size: Medium', 'Features: Shapeshift, Keen Hearing, Keen Smell'],
-      location: 'Location: Warewolves'
+      location: 'Location: Werewolves'
     },
     {
       src: 'Images/Miniatures/Warewolf_3.png',
-      name: 'Warewolf',
+      name: 'Werewolf',
       quantity: 'Quantity: 2',
       tags: ['Race: Werewolf', 'Creature Type: Humanoid', 'Size: Medium', 'Features: Shapeshift, Keen Hearing, Keen Smell'],
-      location: 'Location: Warewolves'
+      location: 'Location: Werewolves'
     },
     {
       src: 'Images/Miniatures/Warewolf_4.png',
-      name: 'Warewolf',
+      name: 'Werewolf',
       quantity: 'Quantity: 2',
       tags: ['Race: Werewolf', 'Creature Type: Humanoid', 'Size: Large', 'Features: Shapeshift, Keen Hearing, Keen Smell'],
-      location: 'Location: Warewolves'
+      location: 'Location: Werewolves'
     },
     {
       src: 'Images/Miniatures/PlagueDoctor_1.png',
@@ -564,9 +564,9 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Weredog_2.png',
-      name: 'Weredog',
+      name: 'Jackelwere',
       quantity: 'Quantity: 2',
-      tags: ['Race: Weredog', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Scythe'],
+      tags: ['Race: Jackelwere', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Scythe'],
       location: 'Location: Egyptian'
     },
     {
@@ -652,6 +652,55 @@ window.miniatures = [
       quantity: 'Quantity: 1',
       tags: ['Race: Lizardfolk', 'Creature Type: Humanoid', 'Size: Large', 'Gender: Male', 'Weapon: Spear', 'Mount: Tyrannosaurus Rex', 'Armor: Medium', 'Features: Mounted Combatant'],
       location: 'Location: Lizardfolk'
+    },
+    {
+      src: 'Images/Miniatures/Soulgrinder_1.png',
+      name: 'Soulgrinder',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Soulgrinder', 'Creature Type: Construct', 'Size: Huge', 'Weapon: Sword', 'Armor: Heavy'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Horse_1.png',
+      name: 'Horse',
+      quantity: 'Quantity: 4',
+      tags: ['Race: Horse', 'Creature Type: Beast', 'Size: Large', 'Features:Trampling Charge'],
+      location: 'Location: Animals'
+    },
+    {
+      src: 'Images/Miniatures/Skeleton_2.png',
+      name: 'Skeleton Mage',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Skeleton', 'Creature Type: Undead', 'Size: Medium', 'Weapon: Staff', 'Armor: Light', 'Features: Spellcasting'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Skeleton_1.png',
+      name: 'Skeleton',
+      quantity: 'Quantity: 2',
+      tags: ['Race: Skeleton', 'Creature Type: Undead', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Skeleton_3.png',
+      name: 'Skeleton',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Skeleton', 'Creature Type: Undead', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Skullcannon_1.png',
+      name: 'Skullcannon/Skullthrone',
+      quantity: 'Quantity: 2',
+      tags: ['Creature Type: Construct', 'Size: Huge', 'Weapon: Skullcannon', 'Armor: Heavy'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Skarbrand_1.png',
+      name: 'Skarbrand',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Fiend', 'Size: Huge', 'Gender: Male', 'Weapon: Axe', 'Armor: Natural', 'Features: Flying'],
+      location: 'Location: Demons'
     },
   ];
 
