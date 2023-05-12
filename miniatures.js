@@ -108,6 +108,13 @@ window.miniatures = [
       location: 'Location: Elementals'
     },
     {
+      src: 'Images/Miniatures/FireElemental_2.png',
+      name: 'Fire Elemental',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Elemental', 'Size: Large', 'Features: Fire Immunity'],
+      location: 'Location: Elementals'
+    },
+    {
       src: 'Images/Miniatures/IceGolem_1.png',
       name: 'Ice Golem',
       quantity: 'Quantity: 1',
@@ -119,6 +126,13 @@ window.miniatures = [
       name: 'Owlbear',
       quantity: 'Quantity: 1',
       tags: ['Creature Type: Monstrosity', 'Size: Large', 'Features: Beak, Claws'],
+      location: 'Location: Animal'
+    },
+    {
+      src: 'Images/Miniatures/Owlbear_2.png',
+      name: 'Owlbear',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Monstrosity', 'Size: Tiny', 'Features: Beak, Claws'],
       location: 'Location: Animal'
     },
     {
@@ -158,6 +172,13 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Yeti_1.png',
+      name: 'Yeti',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Monstrosity', 'Size: Large', 'Features: Cold Absorption, Chilling Gaze, Siege Monster'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/Yeti_2.png',
       name: 'Yeti',
       quantity: 'Quantity: 1',
       tags: ['Creature Type: Monstrosity', 'Size: Large', 'Features: Cold Absorption, Chilling Gaze, Siege Monster'],
@@ -207,6 +228,13 @@ window.miniatures = [
     },
     {
       src: 'Images/Miniatures/Tiamat_1.png',
+      name: 'Tiamat',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Dragon', 'Size: Gargantuan', 'Features: Frightful Presence, Legendary Resistance, Multi-Headed'],
+      location: 'Location: Dragons'
+    },
+    {
+      src: 'Images/Miniatures/Tiamat_2.png',
       name: 'Tiamat',
       quantity: 'Quantity: 1',
       tags: ['Creature Type: Dragon', 'Size: Gargantuan', 'Features: Frightful Presence, Legendary Resistance, Multi-Headed'],
@@ -657,7 +685,7 @@ window.miniatures = [
       src: 'Images/Miniatures/Soulgrinder_1.png',
       name: 'Soulgrinder',
       quantity: 'Quantity: 1',
-      tags: ['Race: Soulgrinder', 'Creature Type: Construct', 'Size: Huge', 'Weapon: Sword', 'Armor: Heavy'],
+      tags: ['Race: Demon', 'Creature Type: Construct', 'Size: Huge', 'Weapon: Sword', 'Armor: Heavy'],
       location: 'Location: Demons'
     },
     {
@@ -689,10 +717,17 @@ window.miniatures = [
       location: 'Location: Undead'
     },
     {
+      src: 'Images/Miniatures/Skeleton_4.png',
+      name: 'Skeleton',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Skeleton', 'Creature Type: Undead', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Undead'
+    },
+    {
       src: 'Images/Miniatures/Skullcannon_1.png',
       name: 'Skullcannon/Skullthrone',
       quantity: 'Quantity: 2',
-      tags: ['Creature Type: Construct', 'Size: Huge', 'Weapon: Skullcannon', 'Armor: Heavy'],
+      tags: ['Race: Demon', 'Creature Type: Construct', 'Size: Huge', 'Weapon: Skullcannon', 'Armor: Heavy'],
       location: 'Location: Demons'
     },
     {
@@ -744,6 +779,459 @@ window.miniatures = [
       tags: ['Race: Dwarf', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Female', 'Weapon: Hammer', 'Armor: Heavy'],
       location: 'Location: NPCs'
     },
+    {
+      src: 'Images/Miniatures/Abishai_1.png',
+      name: 'Blue Abishai',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Abishai', 'Creature Type: Fiend', 'Size: Medium', 'Features: Breath Weapon, Spellcasting'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/AngelFighter_1.png',
+      name: 'Angel/Celestial Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Celestial', 'Creature Type: Celestial', 'Size: Large', 'Armor: Heavy', 'Features: Flight, Divine Smite'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/AnimatedArmor_2.png',
+      name: 'Animated Armor',
+      quantity: 'Quantity: 6',
+      tags: ['Creature Type: Construct', 'Size: Medium', 'Armor: Heavy', 'Features: Immunity to Poison, Bludgeoning, Piercing, and Slashing Damage'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/Bandit_1.png',
+      name: 'Bandit',
+      quantity: 'Quantity: 2',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Banshee_1.png',
+      name: 'Banshee',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Spellcasting'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BeardedDevil_1.png',
+      name: 'Bearded Devil',
+      quantity: 'Quantity: 5',
+      tags: ['Race: Devil', 'Creature Type: Fiend', 'Size: Medium', 'Weapon: Spear', 'Armor: Light'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Behir_1.png',
+      name: 'Behir',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Monstrosity', 'Size: Large', 'Features: Lightning Breath'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/BloodLetter_1.png',
+      name: 'Bloodletter',
+      quantity: 'Quantity: 8',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BloodLetter_2.png',
+      name: 'Bloodletter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light', 'Features: Banner'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BloodLetter_3.png',
+      name: 'Bloodletter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light', 'Features: Horn'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BloodLetterJuggernaut_1.png',
+      name: 'Bloodletter',
+      quantity: 'Quantity: 3',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Large', 'Mount: Juggernaut', 'Weapon: Sword', 'Armor: Light', 'Features: Banner, Horn'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BloodLetterJuggernaut_2.png',
+      name: 'Bloodletter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Large', 'Mount: Juggernaut', 'Weapon: Sword', 'Armor: Light', 'Features: Leader'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Boar_1.png',
+      name: 'Boar',
+      quantity: 'Quantity: 2',
+      tags: ['Creature Type: Beast', 'Size: Medium'],
+      location: 'Location: Animals'
+    },
+    {
+      src: 'Images/Miniatures/CloudGiant_1.png',
+      name: 'Cloud Giant',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Cloud Giant', 'Creature Type: Giant', 'Size: Huge', 'Gender: Male', 'Weapon: Mace', 'Armor: Light'],
+      location: 'Location: Giants'
+    },
+    {
+      src: 'Images/Miniatures/Cyclops_1.png',
+      name: 'Cyclops',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Cyclops', 'Creature Type: Giant', 'Size: Large', 'Gender: Male', 'Weapon: Club', 'Armor: Light'],
+      location: 'Location: Giants'
+    },
+    {
+      src: 'Images/Miniatures/Dragonborn_3.png',
+      name: 'Dragonborn Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Dragonborn', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Male', 'Weapon: Axe', 'Armor: Medium', 'Features: Breath Weapon'],
+      location: 'Location: Dragons'
+    },
+    {
+      src: 'Images/Miniatures/DwarfFighter_3.png',
+      name: 'Dwarf Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Dwarf', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Male', 'Weapon: Axe', 'Armor: Light'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/DwarfFighter_2.png',
+      name: 'Dwarf Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Dwarf', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Fighter', 'Gender: Female', 'Weapon: Hammer', 'Armor: Light'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Efreeti_1.png',
+      name: 'Efreeti Sword',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Elemental', 'Size: Large', 'Weapon: Sword'],
+      location: 'Location: Elementals'
+    },
+    {
+      src: 'Images/Miniatures/ElfSorcerer_2.png',
+      name: 'Elf Sorcerer',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Elf', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Female', 'Class: Sorcerer', 'Weapon: Staff', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/ElfWarlock_1.png',
+      name: 'Elf Warlock',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Elf', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Warlock', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/ElfWarlock_2.png',
+      name: 'Elf Warlock',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Elf', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Warlock', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Ghoul_1.png',
+      name: 'Ghoul',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Giant_1.png',
+      name: 'Ogre',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Giant', 'Creature Type: Giant', 'Size: Huge', 'Gender: Male', 'Weapon: Club'],
+      location: 'Location: Giants'
+    },
+    {
+      src: 'Images/Miniatures/FleshHound_1.png',
+      name: 'Flesh Hound',
+      quantity: 'Quantity: 5',
+      tags: ['Race: Demon', 'Creature Type: Fiend', 'Size: Medium', 'Weapon: Teeth', 'Features: Pack Tactics'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Gladiator_1.png',
+      name: 'Gladiator',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Sword', 'Armor: Heavy'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/GnomeRogue_1.png',
+      name: 'Gnome Rogue',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Gnome', 'Creature Type: Humanoid', 'Size: Small', 'Gender: Female', 'Class: Rogue', 'Weapon: Dagger', 'Features: Sneak Attack'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/GoblinRider_1.png',
+      name: 'Goblin',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Goblin', 'Creature Type: Humanoid', 'Size: Small', 'Weapon: Sword', 'Mount: Spider'],
+      location: 'Location: Orcs'
+    },
+    {
+      src: 'Images/Miniatures/GolaithBarbarian_1.png',
+      name: 'Goliath Barbarian',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Goliath', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Barbarian', 'Weapon: Axe', 'Features: Rage'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/HalfOrcFighter_1.png',
+      name: 'Half-Orc Fighter',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Half-Orc', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Fighter', 'Weapon: Axe'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Harold_1.png',
+      name: 'Harold of Khorne',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Harold_2.png',
+      name: 'Harold of Khorne',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Skulltaker_1.png',
+      name: 'Skulltaker',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Demon', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Light'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/HelmedHorror_1.png',
+      name: 'Helmed Horror',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Construct', 'Size: Medium', 'Weapon: Sword', 'Armor: Heavy'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/HumanMonk_1.png',
+      name: 'Human Monk',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Female', 'Class: Monk'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/HumanNecromancer_1.png',
+      name: 'Human Warlock',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Female', 'Class: Warlock', 'Weapon: Staff', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/HumanPaladin_1.png',
+      name: 'Human Paladin',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Paladin', 'Pet: Dragon', 'Weapon: Sword'],
+      location: 'Location: Knights'
+    },
+    {
+      src: 'Images/Miniatures/HumanWarlock_1.png',
+      name: 'Human Warlock',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Warlock', 'Weapon: Staff', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/HumanWizard_2.png',
+      name: 'Human Wizard',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Wizard', 'Weapon: Staff', 'Features: Spellcasting'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Imp_1.png',
+      name: 'Imp',
+      quantity: 'Quantity: 2',
+      tags: ['Race: Demon', 'Creature Type: Fiend', 'Size: Tiny', 'Features: Flight, Spellcasting'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/LioninRogue_1.png',
+      name: 'Lionin Rogue',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Lionin', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Rogue', 'Weapon: Dagger', 'Features: Sneak Attack'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/MummyCat_1.png',
+      name: 'Mummy Cat',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Cat', 'Creature Type: Undead', 'Size: Tiny'],
+      location: 'Location: Egyptian'
+    },
+    {
+      src: 'Images/Miniatures/Orc_1.png',
+      name: 'Orc',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Orc', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Spear'],
+      location: 'Location: Orcs'
+    },
+    {
+      src: 'Images/Miniatures/Orc_2.png',
+      name: 'Orc',
+      quantity: 'Quantity: 3',
+      tags: ['Race: Orc', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Sword'],
+      location: 'Location: Orcs'
+    },
+    {
+      src: 'Images/Miniatures/Otyugh_1.png',
+      name: 'Otyugh',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Aberration', 'Size: Large', 'Weapon: Tentacles'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/PinkHorror_1.png',
+      name: 'Pink Horror',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Pink Horror', 'Creature Type: Aberration', 'Size: Medium', 'Weapon: Claws'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Purpleworm_1.png',
+      name: 'Purple Worm',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Purple Worm', 'Creature Type: Monstrosity', 'Size: Large', 'Features: Tremorsense, Swallow'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/RockGolem_1.png',
+      name: 'Rock Golem',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Construct', 'Size: Large', 'Features: Immunity to Magic'],
+      location: 'Location: Elementals'
+    },
+    {
+      src: 'Images/Miniatures/Shadow_1.png',
+      name: 'Shadow',
+      quantity: 'Quantity: 2',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Incorporeal Movement, Strength Drain'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/ShamblingMound_1.png',
+      name: 'Shambling Mound',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Plant', 'Size: Large', 'Features: False Appearance, Lightning Absorption'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/StoneGiant_1.png',
+      name: 'Stone Giant',
+      quantity: 'Quantity: 2',
+      tags: ['Race: Stone Giant', 'Creature Type: Giant', 'Size: Large', 'Gender: Male', 'Weapon: Clubs', 'Features: Rock Catching'],
+      location: 'Location: Giants'
+    },
+    {
+      src: 'Images/Miniatures/TabaxiRanger_1.png',
+      name: 'Tabaxi Ranger',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Tabaxi', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Ranger', 'Weapon: Gun'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/TieflingCleric_1.png',
+      name: 'Tiefling Cleric',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Tiefling', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Female', 'Class: Cleric', 'Weapon: Mace'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/TieflingRogue_1.png',
+      name: 'Tiefling Rogue',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Tiefling', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Class: Rogue', 'Weapon: Sword', 'Features: Sneak Attack'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Tricaratops_1.png',
+      name: 'Triceratops',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Beast', 'Size: Huge', 'Features: Charge, Trampling Charge'],
+      location: 'Location: Animals'
+    },
+    {
+      src: 'Images/Miniatures/Wight_1.png',
+      name: 'Wight',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Class: Warlock', 'Weapon: Staff', 'Features: Life Drain, Spellcasting'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Wight_2.png',
+      name: 'Wight',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Class: Fighter', 'Weapon: Sword', 'Features: Life Drain'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Wolf_1.png',
+      name: 'Wolf',
+      quantity: 'Quantity: 4',
+      tags: ['Creature Type: Beast', 'Size: Medium', 'Features: Keen Hearing, Keen Smell, Pack Tactics'],
+      location: 'Location: Animals'
+    },
+    {
+      src: 'Images/Miniatures/Wraith_1.png',
+      name: 'Wraith',
+      quantity: 'Quantity: 2',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Incorporeal Movement, Life Drain'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/YuanTiAbomination_1.png',
+      name: 'Yuan-Ti Abomination',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Yuan-Ti', 'Creature Type: Monstrosity', 'Size: Large'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/YuanTiMalison_1.png',
+      name: 'Yuan-Ti Malison',
+      quantity: 'Quantity: 3',
+      tags: ['Race: Yuan-Ti', 'Creature Type: Monstrosity', 'Size: Medium'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/YuanTiPureBlood_1.png',
+      name: 'Yuan-Ti Pureblood',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Yuan-Ti', 'Creature Type: Monstrosity', 'Size: Medium'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Zombie_2.png',
+      name: 'Zombie',
+      quantity: 'Quantity: 4',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Undead Fortitude'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/AarakokraMonk_1.png',
+      name: 'Aarakokra Monk',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Aarakocra', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Monk'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Specter_1.png',
+      name: 'Specter',
+      quantity: 'Quantity: 3',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Incorporeal Movement, Life Drain'],
+      location: 'Location: Undead'
+    },
   ];
-
-  
