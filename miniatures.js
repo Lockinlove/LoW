@@ -1234,4 +1234,18 @@ window.miniatures = [
       tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Incorporeal Movement, Life Drain'],
       location: 'Location: Undead'
     },
+    {
+      src: 'Images/Miniatures/TortleBarkeep_1.png',
+      name: 'Tortle Barkeep',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Tortle', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/BeeGoblin_1.png',
+      name: 'Bee Goblin',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Goblin', 'Creature Type: Humanoid', 'Size: Small', 'Class: Fighter', 'Weapon: Sword'],
+      location: 'Location: NPCs'
+    },
   ];
