@@ -1,0 +1,59 @@
+.quest-board {
+  position: relative;
+  width: 1400px;  /* Adjust to your image's width */
+  height: 800px; /* Adjust to your image's height */
+  background-image: url(Images/Posters/Questboard/Questboard_2.jpg);
+  background-size: 100% 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  overflow: hidden; /* Hide anything that goes outside the quest board */
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  transition: transform .2s, top .2s, left .2s, z-index .2s; 
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+.poster1 {
+  background-image: url(Images/Posters/Poster4.png);
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.poster2 {
+  background-image: url(Images/Posters/Poster6.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.poster3 {
+  background-image: url(Images/Posters/Poster5.png);
+  background-size: 100% 100%;
+  width: 250px;
+  height: 300px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
