@@ -10,7 +10,7 @@ body {
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  background-image: url("/Images/Background/Background.jpg");
+  background-image: url("/Images/Background/Background_1.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -75,4 +75,11 @@ h1 {
 
 .blackboard li {
   margin-bottom: 5px;
+}
+
+.centered-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
