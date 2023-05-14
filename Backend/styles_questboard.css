@@ -12,41 +12,6 @@
   border-radius: 10px; /* Rounded corners */
 }
 
-.poster {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: absolute;
-  transition: transform .2s, top .2s, left .2s, z-index .2s; 
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.poster1 {
-  background-image: url(/Images/Posters/Poster4.png);
-  background-size: 100% 100%;
-  width: 150px;
-  height: 150px;
-}
-
-.poster2 {
-  background-image: url(/Images/Posters/Poster6.png);
-  background-size: 100% 100%;
-  width: 200px;
-  height: 200px;
-}
-
-.poster3 {
-  background-image: url(/Images/Posters/Poster5.png);
-  background-size: 100% 100%;
-  width: 250px;
-  height: 300px;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -57,30 +22,151 @@
   display: none;
 }
 
+.poster {
+  font-family: fantasy;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  transition: transform .2s, top .2s, left .2s, z-index .2s; 
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide any content that goes outside the image */
+}
+
+.poster1 {
+  background-image: url(/Images/Posters/Poster1.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 250px;
+}
+
+.poster2 {
+  background-image: url(/Images/Posters/Poster2.png);
+  background-size: 100% 100%;
+  width: 150px;
+  height: 250px;
+}
+
+.poster3 {
+  background-image: url(/Images/Posters/Poster3.png);
+  background-size: 100% 100%;
+  width: 150px;
+  height: 300px;
+}
+
+.poster4 {
+  background-image: url(/Images/Posters/Poster4.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.poster5 {
+  background-image: url(/Images/Posters/Poster5.png);
+  background-size: 100% 100%;
+  width: 250px;
+  height: 300px;
+}
+
+.poster6 {
+  background-image: url(/Images/Posters/Poster6.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 230px;
+}
+
+.poster7 {
+  background-image: url(/Images/Posters/Poster7.png);
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+}
+
+.poster8 {
+  background-image: url(/Images/Posters/Poster8.png);
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+}
+
+.poster9 {
+  background-image: url(/Images/Posters/Poster9.png);
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.poster10 {
+  background-image: url(/Images/Posters/Poster10.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.poster11 {
+  background-image: url(/Images/Posters/Poster11.png);
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.poster12 {
+  background-image: url(/Images/Posters/Poster12.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 150px;
+}
+
+.poster13 {
+  background-image: url(/Images/Posters/Poster13.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.poster14 {
+  background-image: url(/Images/Posters/Poster14.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 250px;
+}
+
 .quest-title {
-  font-size: 18px;
-  padding-top: 5%;
+  font-size: 14px;
+  padding-top: 35px;
   padding-right: 10%;
   padding-left: 10%;
+  margin-bottom: 2px;
   font-weight: bold;
   color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .quest-description {
   font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
   padding-right: 20%;
   padding-left: 20%;
-  color: #333;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .quest-difficulty {
+  margin-top: 0px;
+  margin-bottom: 5px;
   font-size: 14px;
-  color: #666;
+  color: #000;
 }
 
 .quest-reward {
+  margin-top: 0px;
   font-size: 14px;
-  color: #666;
+  color: #000;
   font-style: italic;
 }
 
