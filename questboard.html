@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questboard</title>
-    <link rel="stylesheet" href="styles_questboard.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="questboard.js"></script>
-    <script src="quests.js"></script>
+    <link rel="stylesheet" href="Backend/styles_questboard.css">
+    <link rel="stylesheet" href="Backend/styles_index.css">
+    <script src="Backend/questboard.js"></script>
+    <script src="Database/quests.js"></script>
 </head>
 <body>
-    <h1>Questboard</h1>
-    <input type="button" onclick="location.href='index.html';" value="Collection" class="styled-button"/>
-    <input type="text" id="questInput" placeholder="Enter a quest">
-    <button onclick="addQuest()">Add quest</button>
+    <div class="container">
+        <h1>Questboard</h1>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+        </div>
+    </div>
     <div class="quest-board"></div>
     <div class="overlay"></div>
 </body>

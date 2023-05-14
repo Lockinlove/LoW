@@ -1,59 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniature Collection</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="miniatures.js"></script>
-    <script src="main.js"></script>
+  <title>Legends of Wackdonalds</title>
+  <link rel="stylesheet" href="Backend/styles_index.css">
 </head>
 <body>
-    <h1>Miniature Collection</h1>
-    <input type="button" onclick="location.href='questboard.html';" value="Questboard" class="styled-button"/>
-    <div id="miniature-stats"></div>
-
-    <div id="search-form">
-        <input type="text" id="name" placeholder="Name (contains)">
-        <select id="size">
-            <option value="">Size</option>
-            <option value="tiny">Tiny</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="huge">Huge</option>
-            <option value="gargantuan">Gargantuan</option>
-        </select>
-        <input type="text" id="race" placeholder="Race (Dwarf, elf...)">
-        <input type="text" id="subrace" placeholder="Subrace (High Elf, Hill Dwarf...)">
-        <input type="text" id="creatureType" placeholder="Creature Type, (Undead, beast...)">
-        <input type="text" id="gender" placeholder="Gender (Male, Female...)">
-        <input type="text" id="class" placeholder="Class, (Fighter, Wizard...)">
-        <input type="text" id="weapon" placeholder="Weapon or Equipment (Axe, Bow...)">
-        <input type="text" id="armor" placeholder="Armor Type (Light, Heavy...)">
-        <input type="text" id="features" placeholder="Features (Wings, Claws...)">
-        <button id="reset" onclick="reset()">Reset</button>
-        <button id="search" onclick="search()">Search</button>
-
-        <div>
-            <select id="sort-after">
-            <option value="name">Name</option>
-            <option value="size">Size</option>
-            <option value="creatureType">Creature Type</option>
-            <!-- Add more options here for other tags -->
-            </select>
-            <button id="sort-button">Sort After</button>
-        </div>  
-        <!--
-        <input type="text" id="monster-details" placeholder="Monster details (optional)">
-        <button id="generate" onclick="generateStatblock()">Generate Statblock</button>
-        -->
-    </div>
-    <div id="none">
-        <h2>No results found</h2>
-    </div>
-    <div id="grid">
-        <!-- JavaScript does this -->
-    </div>
+  <div class="container">
+      <h1>Welcome to Legends of Wackdonalds</h1>
+      <div class="button-container">
+        <a href="collection.html" class="button">Miniature Collection</a>
+        <a href="questboard.html" class="button">Quest Board</a>
+        <a href="worldmap.html" class="button">World Map</a>
+      </div>
+      <div class="blackboard">
+        <h2>Work in Progress</h2>
+        <p>Currently working on:</p>
+        <ul>
+          <li>Basic idea of the questboard is working, but i am currently working on formatting and placement of the posters</li>
+        </ul>
+        <p>Next up:</p>
+        <ul>
+          <li>Worldmap (interactive wordmap with zoom in function to look at cities, dungeons and so on)</li>
+      </div>
+  </div>
 </body>
 </html>
