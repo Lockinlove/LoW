@@ -9,6 +9,7 @@
   margin: auto;
   margin-bottom: 20px;
   overflow: hidden; /* Hide anything that goes outside the quest board */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .poster {
