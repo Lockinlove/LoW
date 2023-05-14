@@ -811,14 +811,14 @@ window.miniatures = [
       src: 'Images/Miniatures/Banshee_1.png',
       name: 'Banshee',
       quantity: 'Quantity: 1',
-      tags: ['Creature Type: Undead', 'Size: Medium', 'Features: Spellcasting'],
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Gender: Female', 'Features: Spellcasting'],
       location: 'Location: Demons'
     },
     {
       src: 'Images/Miniatures/BeardedDevil_1.png',
       name: 'Bearded Devil',
       quantity: 'Quantity: 5',
-      tags: ['Race: Devil', 'Creature Type: Fiend', 'Size: Medium', 'Weapon: Spear', 'Armor: Light'],
+      tags: ['Race: Devil', 'Creature Type: Fiend', 'Size: Medium', 'Gender: Male', 'Weapon: Spear', 'Armor: Light'],
       location: 'Location: Demons'
     },
     {
