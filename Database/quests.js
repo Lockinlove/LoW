@@ -36,66 +36,66 @@ window.quests = [
       posterType: 'poster5'
     },
     {
-      title: 'Fixed the poster',
+      title: 'The Mysterious Island',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous',
       difficulty: 'Very Hard',
       reward: '10000 Platinum',
       posterType: 'poster6'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Sands of Time',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed.',
+      difficulty: 'Unknown',
+      reward: 'Fire sigil',
       posterType: 'poster7'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Elemental Trials',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen.',
+      difficulty: 'Insane',
+      reward: 'Token',
       posterType: 'poster8'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Ghost Ship',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness',
+      difficulty: '',
+      reward: '',
       posterType: 'poster9'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Shadows of Eldritch Hollow',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness',
+      difficulty: '',
+      reward: '',
       posterType: 'poster10'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Cursed Kingdom',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
+      difficulty: '',
+      reward: '',
       posterType: 'poster11'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Lost Labyrinth',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
+      difficulty: 'Very hard',
+      reward: '',
       posterType: 'poster12'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'Moonstone Castle',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
+      difficulty: '',
+      reward: '',
       posterType: 'poster13'
     },
     {
-      title: 'Fill in',
-      description: 'Fill in',
-      difficulty: 'Fill in',
-      reward: 'Fill in',
+      title: 'The Whispered Prophecy',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
+      difficulty: 'Deadly',
+      reward: '',
       posterType: 'poster14'
     },
     // Add more quests as needed

@@ -239,7 +239,6 @@
   width: 200px;
   height: 230px;
 }
-
 .poster6 .quest-title {
   font-size: 14px;
   padding-top: 17px;
@@ -250,7 +249,6 @@
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .poster6 .quest-description {
   font-size: 8px;
   margin-top: 0px;
@@ -260,14 +258,12 @@
   color: #161616;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 .poster6 .quest-difficulty {
   margin-top: 0px;
   margin-bottom: 2px;
   font-size: 14px;
   color: #000;
 }
-
 .poster6 .quest-reward {
   margin-top: 0px;
   font-size: 14px;
@@ -275,59 +271,333 @@
   font-style: italic;
 }
 
+/* ######### POSTER 7 ######### */
 .poster7 {
   background-image: url(/Images/Posters/Poster7.png);
   background-size: 100% 100%;
   width: 250px;
   height: 250px;
 }
+.poster7 .quest-title {
+  font-size: 14px;
+  padding-top: 22px;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster7 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster7 .quest-difficulty {
+  opacity: 0.8;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster7 .quest-reward {
+  opacity: 0.8;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
+}
 
+/* ######### POSTER 8 ######### */
 .poster8 {
   background-image: url(/Images/Posters/Poster8.png);
   background-size: 100% 100%;
   width: 250px;
   height: 250px;
 }
+.poster8 .quest-title {
+  font-size: 14px;
+  padding-top: 35px;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster8 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster8 .quest-difficulty {
+  opacity: 0.8;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster8 .quest-reward {
+  opacity: 0.8;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
+}
 
+/* ######### POSTER 9 ######### */
 .poster9 {
   background-image: url(/Images/Posters/Poster9.png);
   background-size: 100% 100%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+}
+.poster9 .quest-title {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster9 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster9 .quest-difficulty {
+  opacity: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster9 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
 }
 
+/* ######### POSTER 10 ######### */
 .poster10 {
   background-image: url(/Images/Posters/Poster10.png);
   background-size: 100% 100%;
   width: 200px;
   height: 200px;
 }
+.poster10 .quest-title {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster10 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster10 .quest-difficulty {
+  opacity: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster10 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
+}
 
+/* ######### POSTER 11 ######### */
 .poster11 {
   background-image: url(/Images/Posters/Poster11.png);
   background-size: 100% 100%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+}
+.poster11 .quest-title {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster11 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster11 .quest-difficulty {
+  opacity: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster11 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
 }
 
+/* ######### POSTER 12 ######### */
 .poster12 {
   background-image: url(/Images/Posters/Poster12.png);
   background-size: 100% 100%;
   width: 200px;
-  height: 150px;
+  height: 250px;
+}
+.poster12 .quest-title {
+  font-size: 14px;
+  padding-top: 45px;
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster12 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster12 .quest-difficulty {
+  opacity: 0.8;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster12 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
 }
 
+/* ######### POSTER 13 ######### */
 .poster13 {
   background-image: url(/Images/Posters/Poster13.png);
   background-size: 100% 100%;
   width: 200px;
   height: 200px;
 }
+.poster13 .quest-title {
+  font-size: 14px;
+  padding-top: 35px;
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster13 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster13 .quest-difficulty {
+  opacity: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #000;
+}
+.poster13 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
+}
 
+/* ######### POSTER 14 ######### */
 .poster14 {
   background-image: url(/Images/Posters/Poster14.png);
   background-size: 100% 100%;
   width: 200px;
   height: 250px;
+}
+.poster14 .quest-title {
+  font-size: 14px;
+  padding-top: 35px;
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.poster14 .quest-description {
+  font-size: 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 15%;
+  padding-left: 30%;
+  color: #161616;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.poster14 .quest-difficulty {
+  opacity: 0.8;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  padding-right: 15%;
+  padding-left: 30%;
+  font-size: 14px;
+  color: #000;
+}
+.poster14 .quest-reward {
+  opacity: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #000;
+  font-style: italic;
 }
 
