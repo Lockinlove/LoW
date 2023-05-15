@@ -83,7 +83,7 @@ window.quests = [
     {
       title: 'The Cursed Kingdom',
       type: 'Retrival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
       difficulty: '',
       reward: '',
       posterType: 'poster11'
@@ -108,7 +108,7 @@ window.quests = [
       title: 'The Whispered Prophecy',
       type: 'Sneak',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
-      difficulty: 'Deadly',
+      difficulty: '',
       reward: '',
       posterType: 'poster14'
     },

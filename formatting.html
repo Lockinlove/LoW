@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quest Poster Tester</title>
+  <link rel="stylesheet" href="Backend/styles_formatting.css">
+  <link rel="stylesheet" href="Backend/styles_questboard.css">
+  <link rel="stylesheet" href="Backend/styles_index.css">
+  <script src="Backend/formatting.js"></script>
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>Poster tester</h1>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="questboard.html" class="button">Questboard</a>
+        </div>
+      </div>
+  <div id="main-container">
+    <div id="result-section">
+      <h3>Result:</h3>
+      <div class="display-board"></div>
+    </div>
+    <div id="input-section">
+      <h3>Poster Details:</h3>
+      <label class="label" for="title">Poster variation:</label>
+      <select id="poster-variation" class="select-poster">
+        <option value="poster1">Poster 1</option>
+        <option value="poster2">Poster 2</option>
+        <option value="poster3">Poster 3</option>
+        <option value="poster4">Poster 4</option>
+        <option value="poster5">Poster 5</option>
+        <option value="poster6">Poster 6</option>
+        <option value="poster7">Poster 7</option>
+        <option value="poster8">Poster 8</option>
+        <option value="poster9">Poster 9</option>
+        <option value="poster10">Poster 10</option>
+        <option value="poster11">Poster 11</option>
+        <option value="poster12">Poster 12</option>
+        <option value="poster13">Poster 13</option>
+        <option value="poster14">Poster 14</option>
+      </select>
+      <label class="label" for="title">Title:</label>
+      <input type="text" id="title" />
+      <label class="label" for="type">Type:</label>
+      <input type="text" id="type" />
+      <label class="label" for="description">Description:</label>
+      <input type="text" id="description" />
+      <label class="label" for="difficulty">Difficulty:</label>
+      <input type="text" id="difficulty" />
+      <label class="label" for="reward">Reward:</label>
+      <input type="text" id="reward" />
+      <br />
+      <button id="show-button" onclick="showPoster()">Show</button>
+      <button onclick="resetPoster()">Reset</button>
+    </div>
+  </div>
+</body>
+</html>
