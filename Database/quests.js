@@ -2,6 +2,7 @@
 window.quests = [
     {
       title: 'The Secret of the Whispering Caves',
+      type: 'Assasination',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
       difficulty: 'S rank',
       reward: '10000 bucks',
@@ -9,6 +10,7 @@ window.quests = [
     },
     {
       title: 'The Lost Artifact',
+      type: 'Scouting',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill.',
       difficulty: 'Insanium',
       reward: '5 hookers',
@@ -16,6 +18,7 @@ window.quests = [
     },
     {
       title: 'The Secret of the Whispering Caves',
+      type: 'Capturing',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.',
       difficulty: 'Unknown',
       reward: '10 Rubies',
@@ -23,6 +26,7 @@ window.quests = [
     },
     {
       title: 'The Journey to the Shattered Realm',
+      type: 'Security',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
       difficulty: 'Nutjob',
       reward: 'Staff of the Magi',
@@ -30,6 +34,7 @@ window.quests = [
     },
     {
       title: 'The Curse of the Forbidden',
+      type: 'Escort',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
       difficulty: 'Easy',
       reward: '50000000 gold',
@@ -37,6 +42,7 @@ window.quests = [
     },
     {
       title: 'The Mysterious Island',
+      type: 'Pest control',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous',
       difficulty: 'Very Hard',
       reward: '10000 Platinum',
@@ -44,6 +50,7 @@ window.quests = [
     },
     {
       title: 'The Sands of Time',
+      type: 'Tournament',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed.',
       difficulty: 'Unknown',
       reward: 'Fire sigil',
@@ -51,6 +58,7 @@ window.quests = [
     },
     {
       title: 'The Elemental Trials',
+      type: 'Survival',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen.',
       difficulty: 'Insane',
       reward: 'Token',
@@ -58,13 +66,15 @@ window.quests = [
     },
     {
       title: 'The Ghost Ship',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness',
+      type: 'Water exploration',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of',
       difficulty: '',
       reward: '',
       posterType: 'poster9'
     },
     {
       title: 'The Shadows of Eldritch Hollow',
+      type: 'Exorsism',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness',
       difficulty: '',
       reward: '',
@@ -72,6 +82,7 @@ window.quests = [
     },
     {
       title: 'The Cursed Kingdom',
+      type: 'Retrival',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
       difficulty: '',
       reward: '',
@@ -79,6 +90,7 @@ window.quests = [
     },
     {
       title: 'The Lost Labyrinth',
+      type: 'Locating',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
       difficulty: 'Very hard',
       reward: '',
@@ -86,6 +98,7 @@ window.quests = [
     },
     {
       title: 'Moonstone Castle',
+      type: 'Inflantry',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
       difficulty: '',
       reward: '',
@@ -93,6 +106,7 @@ window.quests = [
     },
     {
       title: 'The Whispered Prophecy',
+      type: 'Sneak',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
       difficulty: 'Deadly',
       reward: '',

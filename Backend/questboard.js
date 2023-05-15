@@ -15,6 +15,11 @@ function addQuest(quest) {
   title.classList.add("quest-title"); // Add class here
   content.appendChild(title);
 
+  var type = document.createElement("p");
+  type.innerText = quest.type;
+  type.classList.add("quest-type"); // Add class here
+  content.appendChild(type);
+
   var description = document.createElement("p");
   description.innerText = quest.description;
   description.classList.add("quest-description"); // Add class here
