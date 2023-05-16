@@ -8,6 +8,9 @@ function print() {
   var description = document.getElementById("description").value;
   var difficulty = document.getElementById("difficulty").value;
   var reward = document.getElementById("reward").value;
+  // Extract x and y values
+  var coordinates = document.getElementById("poster-location").value;
+  var [x, y] = coordinates.split(',').map(value => parseInt(value.trim()));
 
   // Create formatted string
   var formattedString = `
@@ -17,7 +20,9 @@ function print() {
       description: '${description}',
       difficulty: '${difficulty}',
       reward: '${reward}',
-      posterType: '${variation}'
+      posterType: '${variation}',
+      x: ${x},
+      y: ${y}
     },
   `;
 
@@ -153,6 +158,7 @@ function showPoster() {
     
       // Reset input fields and poster variation selector
       document.getElementById("poster-variation").value = "poster1";
+      document.getElementById("poster-location").value = "78,78";
       document.getElementById("title").value = "";
       document.getElementById("type").value = "";
       document.getElementById("description").value = "";

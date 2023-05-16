@@ -1,14 +1,24 @@
 // quests.js
 window.quests = [
     {
+      title: 'The Cursed Kingdom',
+      type: 'Retrival',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
+      difficulty: '',
+      reward: '',
+      posterType: 'poster11',
+      x: 1125,
+      y: 537
+    },
+    {
       title: 'The Secret of the Whispering Caves',
       type: 'Assasination',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
       difficulty: 'S rank',
       reward: '10000 bucks',
       posterType: 'poster1',
-      x: 75,
-      y: 90
+      x: 78,
+      y: 78
     },
     {
       title: 'The Lost Artifact',
@@ -17,8 +27,8 @@ window.quests = [
       difficulty: 'Insanium',
       reward: '5 hookers',
       posterType: 'poster2',
-      x: 239,
-      y: 75
+      x: 259,
+      y: 60
     },
     {
       title: 'The Secret of the Whispering Caves',
@@ -27,8 +37,8 @@ window.quests = [
       difficulty: 'Unknown',
       reward: '10 Rubies',
       posterType: 'poster3',
-      x: 450,
-      y: 50
+      x: 485,
+      y: 97
     },
     {
       title: 'The Journey to the Shattered Realm',
@@ -37,7 +47,7 @@ window.quests = [
       difficulty: 'Nutjob',
       reward: 'Staff of the Magi',
       posterType: 'poster4',
-      x: 650,
+      x: 680,
       y: 50
     },
     {
@@ -47,8 +57,8 @@ window.quests = [
       difficulty: 'Easy',
       reward: '50000000 gold',
       posterType: 'poster5',
-      x: 850,
-      y: 50
+      x: 876,
+      y: 112
     },
     {
       title: 'The Mysterious Island',
@@ -57,8 +67,8 @@ window.quests = [
       difficulty: 'Very Hard',
       reward: '10000 Platinum',
       posterType: 'poster6',
-      x: 1050,
-      y: 50
+      x: 1079,
+      y: 87
     },
     {
       title: 'The Sands of Time',
@@ -67,8 +77,18 @@ window.quests = [
       difficulty: 'Unknown',
       reward: 'Fire sigil',
       posterType: 'poster7',
-      x: 50,
-      y: 250
+      x: 77,
+      y: 315
+    },
+    {
+      title: 'The Cursed Kingdom',
+      type: 'Retrival',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
+      difficulty: '',
+      reward: '',
+      posterType: 'poster11',
+      x: 198,
+      y: 567
     },
     {
       title: 'The Elemental Trials',
@@ -81,14 +101,24 @@ window.quests = [
       y: 250
     },
     {
+      title: 'The Secret of the Whispering Caves',
+      type: 'Assasination',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
+      difficulty: 'S rank',
+      reward: '900000 bucks',
+      posterType: 'poster1',
+      x: 523,
+      y: 489
+    },
+    {
       title: 'The Ghost Ship',
       type: 'Water exploration',
       description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of',
       difficulty: '',
       reward: '',
       posterType: 'poster9',
-      x: 450,
-      y: 250
+      x: 487,
+      y: 390
     },
     {
       title: 'The Shadows of Eldritch Hollow',
@@ -97,8 +127,18 @@ window.quests = [
       difficulty: '',
       reward: '',
       posterType: 'poster10',
-      x: 650,
-      y: 250
+      x: 665,
+      y: 300
+    },
+    {
+      title: 'The Secret of the Whispering Caves',
+      type: 'Assasination',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
+      difficulty: 'S rank',
+      reward: '20000 bucks',
+      posterType: 'poster3',
+      x: 1030,
+      y: 447
     },
     {
       title: 'The Cursed Kingdom',
@@ -107,8 +147,8 @@ window.quests = [
       difficulty: '',
       reward: '',
       posterType: 'poster11',
-      x: 850,
-      y: 250
+      x: 921,
+      y: 387
     },
     {
       title: 'The Lost Labyrinth',
@@ -117,8 +157,18 @@ window.quests = [
       difficulty: 'Very hard',
       reward: '',
       posterType: 'poster12',
-      x: 1050,
-      y: 250
+      x: 1120,
+      y: 267
+    },
+    {
+      title: 'The Cursed Kingdom',
+      type: 'Retrival',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
+      difficulty: '',
+      reward: '',
+      posterType: 'poster11',
+      x: 198,
+      y: 567
     },
     {
       title: 'Moonstone Castle',
@@ -127,8 +177,8 @@ window.quests = [
       difficulty: '',
       reward: '',
       posterType: 'poster13',
-      x: 50,
-      y: 450
+      x: 67,
+      y: 510
     },
     {
       title: 'The Whispered Prophecy',
@@ -137,8 +187,18 @@ window.quests = [
       difficulty: '',
       reward: '',
       posterType: 'poster14',
-      x: 250,
-      y: 450
+      x: 300,
+      y: 454
+    },
+    {
+      title: 'The Journey to the Shattered Realm',
+      type: 'Security',
+      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
+      difficulty: 'Nutjob',
+      reward: 'Staff of the Fire',
+      posterType: 'poster4',
+      x: 730,
+      y: 467
     },
     // Add more quests as needed
   ];
