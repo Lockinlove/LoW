@@ -1,6 +1,40 @@
 // formatting.js
 var currentPoster = null;
 
+function print() {
+  var variation = document.getElementById("poster-variation").value;
+  var title = document.getElementById("title").value;
+  var type = document.getElementById("type").value;
+  var description = document.getElementById("description").value;
+  var difficulty = document.getElementById("difficulty").value;
+  var reward = document.getElementById("reward").value;
+
+  // Create formatted string
+  var formattedString = `
+    {
+      title: '${title}',
+      type: '${type}',
+      description: '${description}',
+      difficulty: '${difficulty}',
+      reward: '${reward}',
+      posterType: '${variation}'
+    },
+  `;
+
+  // Get the display board 2 element
+  var displayBoard2 = document.querySelector(".display-board2");
+
+  // Clear the old content
+  displayBoard2.innerHTML = "";
+
+  // Create a new paragraph element to hold the formatted string
+  var paragraph = document.createElement("p");
+  paragraph.innerText = formattedString;
+
+  // Append the paragraph to the display board 2
+  displayBoard2.appendChild(paragraph);
+};
+
 function addQuest(quest) {
   if (currentPoster) {
     currentPoster.remove();
@@ -40,7 +74,6 @@ function addQuest(quest) {
   poster.appendChild(content);
 
   var board = document.querySelector(".display-board");
-  var boardRect = board.getBoundingClientRect();
 
   // Wait for the next frame to allow the poster to be rendered with correct dimensions
   requestAnimationFrame(function() {
@@ -107,21 +140,44 @@ function showPoster() {
     difficulty: difficulty,
     reward: reward
     };
-    
+    print();
     addQuest(quest);
     }
     
     function resetPoster() {
       var questBoard = document.querySelector(".display-board");
+      var questBoard2 = document.querySelector(".display-board2");
       questBoard.innerHTML = "";
+      questBoard2.innerHTML = "";
       currentPoster = null;
     
       // Reset input fields and poster variation selector
-      document.getElementById("poster-variation").value = "";
+      document.getElementById("poster-variation").value = "poster1";
       document.getElementById("title").value = "";
       document.getElementById("type").value = "";
       document.getElementById("description").value = "";
       document.getElementById("difficulty").value = "";
       document.getElementById("reward").value = "";
     }
+
     
+    function copyToClipboard() {
+  // Get the element with the text you want to copy
+  var textToCopy = document.querySelector(".display-board2 p");
+
+  // Create a new textarea element and give it the value of the text you want to copy
+  var textarea = document.createElement("textarea");
+  textarea.value = textToCopy.innerText;
+
+  // Add the textarea to the DOM
+  document.body.appendChild(textarea);
+
+  // Select the text
+  textarea.select();
+
+  // Execute the "copy" command
+  document.execCommand("copy");
+
+  // Remove the textarea from the DOM
+  document.body.removeChild(textarea);
+}

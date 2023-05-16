@@ -39,13 +39,12 @@ function addQuest(quest) {
   
   // Set a random position for the poster
   var board = document.querySelector(".quest-board");
-  var boardRect = board.getBoundingClientRect();
 
   // Wait for the next frame to allow the poster to be rendered with correct dimensions
   requestAnimationFrame(function() {
     var boardRect = board.getBoundingClientRect();
-    var x = 60 + Math.random() * (boardRect.width - poster.offsetWidth - 360);
-    var y = 50 + Math.random() * (boardRect.height - poster.offsetHeight -360);
+    var x = quest.x;  // Use the x value from the quest
+    var y = quest.y;  // Use the y value from the quest
     poster.style.left = `${x}px`;
     poster.style.top = `${y}px`;
 
