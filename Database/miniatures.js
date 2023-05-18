@@ -759,7 +759,7 @@ window.miniatures = [
       location: 'Location: NPCs'
     },
     {
-      src: 'Images/Miniatures/Werebear_1.png',
+      src: 'Images/Miniatures/WereBear_1.png',
       name: 'Werebear',
       quantity: 'Quantity: 1',
       tags: ['Race: Werebear', 'Creature Type: Humanoid', 'Size: Medium', 'Gender: Male', 'Weapon: Axe', 'Armor: Medium', 'Features: Shapechanger'],
