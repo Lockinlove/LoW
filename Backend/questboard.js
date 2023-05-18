@@ -10,30 +10,89 @@ function addQuest(quest) {
 
   var content = document.createElement("div");
 
+  if (quest.title) {
   var title = document.createElement("h2");
   title.innerText = quest.title;
   title.classList.add("quest-title"); // Add class here
   content.appendChild(title);
+  }
 
-  var type = document.createElement("p");
-  type.innerText = quest.type;
-  type.classList.add("quest-type"); // Add class here
-  content.appendChild(type);
+  if (quest.bounty) {
+    var bounty = document.createElement("p");
+    bounty.innerText = quest.bounty;
+    bounty.classList.add("quest-bounty"); // Add class here
+    content.appendChild(bounty);
+  }
 
+  if (quest.spaceing) {
+    var spaceing = document.createElement("p");
+    spaceing.innerText = quest.spaceing;
+    spaceing.classList.add("quest-spaceing"); // Add class here
+    content.appendChild(spaceing);
+  }
+
+  if (quest.image) {
+    var image = document.createElement("img");
+    image.src = quest.image;
+    image.classList.add("quest-image");
+    content.appendChild(image);
+  }
+
+  if (quest.spaceing) {
+    var spaceing = document.createElement("p");
+    spaceing.innerText = quest.spaceing;
+    spaceing.classList.add("quest-spaceing"); // Add class here
+    content.appendChild(spaceing);
+  }
+
+  if (quest.type) {
+    var type = document.createElement("p");
+    type.innerText = quest.type;
+    type.classList.add("quest-type"); // Add class here
+    content.appendChild(type);
+  }
+
+  if (quest.description) {
   var description = document.createElement("p");
   description.innerText = quest.description;
   description.classList.add("quest-description"); // Add class here
   content.appendChild(description);
+  }
 
+  if (quest.signature || quest.seal) {
+    var signSealContainer = document.createElement("div");
+    signSealContainer.classList.add("quest-signseal-container"); // Add class here
+  
+    if (quest.signature) {
+      var signature = document.createElement("p");
+      signature.innerText = `Posted by:\n${quest.signature}`;
+      signature.classList.add("quest-signature");
+      signSealContainer.appendChild(signature);
+    }
+  
+    if (quest.seal) {
+      var seal = document.createElement("img");
+      seal.src = quest.seal;
+      seal.classList.add("quest-seal");
+      signSealContainer.appendChild(seal);
+    }
+  
+    content.appendChild(signSealContainer);
+  }  
+
+  if (quest.difficulty) {
   var difficulty = document.createElement("p");
   difficulty.innerText = `Difficulty: ${quest.difficulty}`;
   difficulty.classList.add("quest-difficulty"); // Add class here
   content.appendChild(difficulty);
+  }
 
+  if (quest.reward) {
   var reward = document.createElement("p");
   reward.innerText = `Reward: ${quest.reward}`;
   reward.classList.add("quest-reward"); // Add class here
   content.appendChild(reward);
+  } 
 
   poster.appendChild(content);
   

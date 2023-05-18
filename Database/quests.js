@@ -11,12 +11,14 @@ window.quests = [
       y: 537
     },
     {
-      title: 'The Secret of the Whispering Caves',
-      type: 'Assasination',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
-      difficulty: 'S rank',
-      reward: '10000 bucks',
-      posterType: 'poster1',
+      title: 'WANTED',
+      bounty: '500g alive, 100g dead',
+      spaceing: '------------------------',
+      image: 'Images/Posters/Bounties/test.png',
+      description: 'For the capture or death of the notorious bandit, Redbeard. Last seen in the vicinity of the Whispering Caves. Known to be armed and dangerous. Approach with caution.',
+      signature: 'Sheriff of Delmaria',
+      seal: 'Images/Posters/Bounties/Seals/CrownSeal.png',
+      posterType: 'bounty1',
       x: 78,
       y: 78
     },

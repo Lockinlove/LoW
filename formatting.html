@@ -5,17 +5,22 @@
   <link rel="stylesheet" href="Backend/styles_formatting.css">
   <link rel="stylesheet" href="Backend/styles_questboard.css">
   <link rel="stylesheet" href="Backend/styles_index.css">
-  <script src="Backend/formatting.js"></script>
-</head>
 </head>
 <body>
-    <div class="container">
-        <h1>Poster tester</h1>
-        <div class="button-container">
-            <a href="index.html" class="button">Home</a>
-            <a href="questboard.html" class="button">Questboard</a>
-        </div>
-      </div>
+  <div class="container">
+    <h1>Poster tester</h1>
+    <div class="button-container">
+        <a href="index.html" class="button">Home</a>
+        <a href="questboard.html" class="button">Questboard</a>
+    </div>
+    <div class="switch">
+      <label class="switch-label" for="toggle-switch">Quest/Bounty</label>
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider"></span>
+      </label>
+    </div>    
+  </div>
   <div id="main-container">
     <div id="result-section">
       <h3>Result:</h3>
@@ -25,7 +30,11 @@
     </div>
     <div id="input-section">
       <h3>Poster Details:</h3>
-      <label class="label" for="title">Poster variation:</label>
+      <label class="label" for="city-questboard">City:</label>
+      <select id="city-questboard" class="select-poster">
+        <option value="city1">City 1</option>
+      </select>
+      <label class="label" for="poster-variation">Poster variation:</label>
       <select id="poster-variation" class="select-poster">
         <option value="poster1">Poster 1</option>
         <option value="poster2">Poster 2</option>
@@ -42,44 +51,48 @@
         <option value="poster13">Poster 13</option>
         <option value="poster14">Poster 14</option>
       </select>
-      <label class="label" for="title">Poster location:</label>
-      <select id="poster-location" class="select-poster">
-        <option value="78,78">A</option>
-        <option value="259,60">B</option>
-        <option value="485,97">C</option>
-        <option value="680,50">D</option>
-        <option value="876,112">E</option>
-        <option value="1079,87">F</option>
-        <option value="77,315">G</option>
-        <option value="250,250">H</option>
-        <option value="487,390">I</option>
-        <option value="665,300">J</option>
-        <option value="921,387">K</option>
-        <option value="1120,267">L</option>
-        <option value="67,510">M</option>
-        <option value="198,567">N</option>
-        <option value="300,454">O</option>
-        <option value="523,489">P</option>
-        <option value="730,467">Q</option>
-        <option value="1030,447">R</option>
-        <option value="1125,537">S</option>
-      </select>
-      <label class="label" for="title">Title:</label>
-      <input type="text" id="title" />
-      <label class="label" for="type">Type:</label>
-      <input type="text" id="type" />
-      <label class="label" for="description">Description:</label>
-      <input type="text" id="description" />
-      <label class="label" for="difficulty">Difficulty:</label>
-      <input type="text" id="difficulty" />
-      <label class="label" for="reward">Reward:</label>
-      <input type="text" id="reward" />
-      <br />
+    <label class="label" for="title">Poster location:</label>
+    <select id="poster-location" class="select-poster">
+      <option value="78,78">A</option>
+      <option value="259,60">B</option>
+      <option value="485,97">C</option>
+      <option value="680,50">D</option>
+      <option value="876,112">E</option>
+      <option value="1079,87">F</option>
+      <option value="77,315">G</option>
+      <option value="250,250">H</option>
+      <option value="487,390">I</option>
+      <option value="665,300">J</option>
+      <option value="921,387">K</option>
+      <option value="1120,267">L</option>
+      <option value="67,510">M</option>
+      <option value="198,567">N</option>
+      <option value="300,454">O</option>
+      <option value="523,489">P</option>
+      <option value="730,467">Q</option>
+      <option value="1030,447">R</option>
+      <option value="1125,537">S</option>
+    </select>
+    <label class="label" for="title">Title:</label>
+    <input type="text" id="title" />
+    <label class="label" for="type">Type:</label>
+    <input type="text" id="type" />
+    <label class="label" for="description">Description:</label>
+    <input type="text" id="description" />
+    <label class="label" for="difficulty">Difficulty:</label>
+    <input type="text" id="difficulty" />
+    <label class="label" for="reward">Reward:</label>
+    <input type="text" id="reward" />
+    <br />
+    <div class="button-container">
       <button id="show-button" onclick="showPoster()">Show</button>
       <button onclick="resetPoster()">Reset</button>
-      <img src="Images/Posters/Posters.png" alt="Posters" class="posters">
-      <img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">
+      <button>Add to questboard</button>
+    </div>    
+    <img src="Images/Posters/Posters.png" alt="Posters" class="posters">
+    <img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">
     </div>
   </div>
+  <script src="Backend/formatting.js"></script>
 </body>
 </html>
