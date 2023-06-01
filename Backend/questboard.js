@@ -1,7 +1,35 @@
 // questboard.js
 document.addEventListener('DOMContentLoaded', (event) => {
-  quests.forEach(addQuest);
+  const fileName = window.location.pathname.split('/').pop(); // Get the file name from the URL
+  
+  if (fileName === 'questboardDullen.html') {
+    questsDullen.forEach(addQuest);
+  } else if (fileName === 'questboardVelz.html') {
+    questsVelz.forEach(addQuest);
+  } else if (fileName === 'questboardLetty.html') {
+    questsLetty.forEach(addQuest);
+  }
 });
+
+
+function displayQuestStats() {
+  const questsVelzLength = window.questsVelz.length;
+  const questsDullenLength = window.questsDullen.length;
+  const questsLettyLength = window.questsLetty.length;
+
+  const velzDiv = document.getElementById('description-velz');
+  velzDiv.innerHTML = `Number of quests: ${questsVelzLength}`;
+
+  const dullenDiv = document.getElementById('description-dullen');
+  dullenDiv.innerHTML = `Number of quests: ${questsDullenLength}`;
+
+  const lettyDiv = document.getElementById('description-letty');
+  lettyDiv.innerHTML = `Number of quests: ${questsLettyLength}`;
+}
+
+// Call the function after the page is fully loaded
+window.addEventListener('load', displayQuestStats);
+
 
 function addQuest(quest) {
   var poster = document.createElement("div");

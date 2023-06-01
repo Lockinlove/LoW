@@ -1,5 +1,5 @@
 // quests.js
-window.quests = [
+window.questsVelz = [
     {
       title: 'The Cursed Kingdom',
       type: 'Retrival',
@@ -17,7 +17,7 @@ window.quests = [
       image: 'Images/Posters/Bounties/test.png',
       description: 'For the capture or death of the notorious bandit, Redbeard. Last seen in the vicinity of the Whispering Caves. Known to be armed and dangerous. Approach with caution.',
       signature: 'Sheriff of Delmaria',
-      seal: 'Images/Posters/Bounties/Seals/CrownSeal.png',
+      seal: 'Images/Posters/Bounties/Seals/GovernmentSeal.png',
       posterType: 'bounty1',
       x: 78,
       y: 78
@@ -81,16 +81,6 @@ window.quests = [
       posterType: 'poster7',
       x: 77,
       y: 315
-    },
-    {
-      title: 'The Cursed Kingdom',
-      type: 'Retrival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster11',
-      x: 198,
-      y: 567
     },
     {
       title: 'The Elemental Trials',

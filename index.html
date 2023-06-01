@@ -3,23 +3,55 @@
 <head>
   <title>Legends of Wackdonalds</title>
   <link rel="stylesheet" href="Backend/styles_index.css">
+  <!-- DICE ROLLER -->
+  <script>
+function rollDice() {
+  var numDice = document.getElementById('dice-number').value;
+  var diceType = document.getElementById('dice-type').value;
+  var results = [];
+  var sum = 0;
+  
+  // Show the gif at the start of dice roll
+  var diceGif = document.getElementById('dice-gif');
+  var rollResult = document.getElementById('roll-result');
+  var rollSum = document.getElementById('roll-sum');
+
+  diceGif.style.display = 'block';
+  rollResult.style.display = 'none';
+  rollSum.style.display = 'none';
+  
+  for(var i = 0; i < numDice; i++) {
+    var roll = Math.floor(Math.random() * diceType) + 1;
+    results.push(roll);
+    sum += roll;
+  }
+  
+  var resultsString = 'Dice rolls: ' + results.join(', ');
+  var sumString = 'Total: ' + sum;
+  
+  // Hide the gif after 2 seconds and display the roll results and sum
+  setTimeout(function() {
+    diceGif.style.display = 'none';
+    rollResult.innerHTML = resultsString;
+    rollSum.innerHTML = sumString;
+    rollResult.style.display = 'block';
+    rollSum.style.display = 'block';
+  }, 1000);
+}
+  </script>
 </head>
 <body>
   <div class="container">
       <h1>Welcome to Legends of Wackdonalds</h1>
       <div class="button-container">
         <a href="collection.html" class="button">Miniature Collection</a>
-        <a href="questboard.html" class="button">Quest Board</a>
+        <a href="questboardHome.html" class="button">Questboards</a>
         <a href="worldmap.html" class="button">World Map (WIP)</a>
       </div>
       <div class="blackboard">
         <p>Currently working on:</p>
         <ul>
-          <li>Finish work on the questboard, remove all current quests such that it is ready for use</li>
-        </ul>
-        <p>Todo:</p>
-        <ul>
-          <li>More questboards for other cities?</li>
+          <li>Add the ability to add quest from the website</li>
         </ul>
         <p>Next up:</p>
         <ul>
@@ -27,6 +59,28 @@
           <li>Working on scrapeing the basic idea of the map based on Sword Coast map.</li>
         </ul>
       </div>
+      <div class="dice-roller-container">
+        <h2 style="font-family: 'Georgia', serif;">Dice Roller</h2>
+        <label for="dice-number">Number of dice:</label>
+        <input id="dice-number" type="number" min="1" max="100" value="1">
+        <label for="dice-type">Type of dice:</label>
+        <select id="dice-type">
+          <option value="4">D4</option>
+          <option value="6">D6</option>
+          <option value="8">D8</option>
+          <option value="10">D10</option>
+          <option value="12">D12</option>
+          <option value="20">D20</option>
+          <option value="100">D100</option>
+        </select>
+        <button onclick="rollDice()">Roll!</button>
+        <div id="dice-display" class="centered-gif">
+          <img id="dice-gif" src="Images/Gifs/Gif_2.gif" style="display: none;" width="100" height="auto">
+          <div id="roll-result" style="display: none;"></div>
+          <div id="roll-sum" style="display: none;"></div>
+        </div>
+      </div>      
+      
       <div class="centered-gif">
         <img src="Images/Gifs/Gif_1.gif" alt="GIF">
       </div>

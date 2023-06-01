@@ -5,13 +5,39 @@
   <link rel="stylesheet" href="Backend/styles_formatting.css">
   <link rel="stylesheet" href="Backend/styles_questboard.css">
   <link rel="stylesheet" href="Backend/styles_index.css">
+  <script>
+    function copyToClipboard() {
+      var displayBoard = document.querySelector('.display-board2');
+      var textToCopy = displayBoard.innerText;
+    
+      // Create a temporary textarea element
+      var textarea = document.createElement('textarea');
+      textarea.value = textToCopy;
+      document.body.appendChild(textarea);
+    
+      // Copy the text from the textarea
+      textarea.select();
+      document.execCommand('copy');
+    
+      // Remove the temporary textarea
+      document.body.removeChild(textarea);
+    
+      // Change the button text temporarily to indicate success
+      var button = document.querySelector('.button2');
+      var originalButtonText = button.innerText;
+      button.innerText = 'Copied!';
+      setTimeout(function() {
+        button.innerText = originalButtonText;
+      }, 1000);
+    }
+  </script>
 </head>
 <body>
   <div class="container">
-    <h1>Poster tester</h1>
+    <h1>Poster creator</h1>
     <div class="button-container">
         <a href="index.html" class="button">Home</a>
-        <a href="questboard.html" class="button">Questboard</a>
+        <a href="questboardHome.html" class="button">Questboards</a>
     </div>
     <div class="switch">
       <label class="switch-label" for="toggle-switch">Quest/Bounty</label>
@@ -30,10 +56,10 @@
     </div>
     <div id="input-section">
       <h3>Poster Details:</h3>
-      <label class="label" for="city-questboard">City:</label>
+      <!-- <label class="label" for="city-questboard">City:</label>
       <select id="city-questboard" class="select-poster">
         <option value="city1">City of Velz</option>
-      </select>
+      </select> -->
       <label class="label" for="poster-variation">Poster variation:</label>
       <select id="poster-variation" class="select-poster">
         <option value="poster1">Poster 1</option>
