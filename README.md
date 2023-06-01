@@ -1,5 +1,4 @@
 # Wackdonalds
-vi tester lige
 Github for my DnD miniature collection
 
 To update the miniature collection:
