@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   <h3>Poster Details:</h3>
   <label class="label" for="city-questboard">City:</label>
   <select id="city-questboard" class="select-poster">
-    <option value="city1">City 1</option>
+    <option value="city1">City of Velz</option>
   </select>
   <label class="label" for="poster-variation">Poster variation:</label>
   <select id="poster-variation" class="select-poster">
@@ -68,7 +68,7 @@ var templateOn = `
 <h3>Poster Details:</h3>
       <label class="label" for="city-questboard">City:</label>
       <select id="city-questboard" class="select-poster">
-        <option value="city1">City 1</option>
+        <option value="city1">City of Velz</option>
       </select>
         <label class="label" for="poster-variation">Poster variation:</label>
         <select id="poster-variation" class="select-poster">
