@@ -1,4 +1,5 @@
 /* Quest Board */
+@import url('https://fonts.google.com/specimen/Uncial+Antiqua');
 
 .quest-board {
   position: relative;
@@ -13,7 +14,8 @@
 }
 
 .quest-board-text {
-  font-family: fantasy;
+  /* font-family: fantasy; */
+  font-family: 'Uncial Antiqua', cursive;
   position: absolute;
   top: -15px; /* Adjust the top value to position the text as desired */
   left: 50%; /* Center the text horizontally */
@@ -42,7 +44,7 @@
 }
 
 .poster {
-  font-family: fantasy;
+  font-family: 'Uncial Antiqua', cursive;
   display: block;
   flex-direction: column;
   justify-content: center;
