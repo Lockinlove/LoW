@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worldmap</title>
-    <link rel="stylesheet" href="Backend/styles_index.css">
+    <!-- <link rel="stylesheet" href="Backend/styles_index.css"> -->
+    <link rel="stylesheet" href="Backend/styles_worldmap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-pan-zoom/3.5.3/svg-pan-zoom.min.js"></script>
+    <script src="Backend/worldmap.js"></script>
+    <script src="Database/cities.js"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Worldmap</h1>
-        <div class="button-container">
-            <a href="index.html" class="button">Home</a>
-        </div>
+    <div id="info-box">
+    </div>    
+    <div id="map-container">
+        <embed src="/Images/Maps/World.svg" type="image/svg+xml" id="map"/>
     </div>
-    <div style="text-align: center;">
-        <img src="/Images/Maps/World.jpg" alt="map" style="width: 60%; border-radius: 20px;">
-    </div>      
+    <div id="zoom-controls">
+        <button id="zoom-in">+</button>
+        <button id="zoom-out">-</button>
+    </div>
 </body>
 </html>
