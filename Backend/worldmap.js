@@ -23,7 +23,7 @@ window.onload = function() {
     
     // Set default content for the info box
     var infoBox = document.getElementById('info-box');
-    infoBox.innerHTML = '<h2>Welcome to the interactive map!</h2> <p>Click on a dot to get more information about a city.</p> <a href="index.html" class="button">Home</a>';
+    infoBox.innerHTML = '<h2>Welcome to the interactive map!</h2> <p>Click on a dot to get more information about a place.</p> <a href="index.html" class="button">Home</a>';
 
     var dots = svgDoc.getElementsByClassName('dot');
     for (var i = 0; i < dots.length; i++) {
@@ -41,7 +41,7 @@ window.onload = function() {
 
     // Add a click event listener to the SVG. If the SVG is clicked and the target was not a dot, reset the info box to the default message
     svgElement.addEventListener('click', function() {
-        infoBox.innerHTML = '<h2>Welcome to the interactive map!</h2> <p>Click on a dot to get more information about a city.</p> <a href="index.html" class="button">Home</a>';
+        infoBox.innerHTML = '<h2>Welcome to the interactive map!</h2> <p>Click on a dot to get more information about a place.</p> <a href="index.html" class="button">Home</a>';
     });
 
     // Initialize svg-pan-zoom
@@ -53,5 +53,9 @@ window.onload = function() {
     });
     document.getElementById('zoom-out').addEventListener('click', function() {
         panZoomInstance.zoomOut();
+    });
+    document.getElementById('reset').addEventListener('click', function() {
+        panZoomInstance.resetZoom();
+        panZoomInstance.resetPan();
     });
 };

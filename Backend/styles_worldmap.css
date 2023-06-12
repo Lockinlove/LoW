@@ -6,7 +6,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    background-color: #55676e;
+    background-color: #51686f;
 }
 
 #info-box {
@@ -43,7 +43,8 @@ body, html {
 }
 
 #zoom-in,
-#zoom-out {
+#zoom-out,
+#reset {
   width: 30px;
   height: 30px;
   border-radius: 5px;
