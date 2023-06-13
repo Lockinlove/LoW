@@ -327,7 +327,7 @@ window.miniatures = [
     {
       src: 'Images/Miniatures/Lizardfolk_2.png',
       name: 'Lizardfolk',
-      quantity: 'Quantity: 9',
+      quantity: 'Quantity: 10',
       tags: ['Race: Lizardfolk', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Sword', 'Armor: Shield'],
       location: 'Location: Lizardfolk'
     },
@@ -1246,6 +1246,13 @@ window.miniatures = [
       name: 'Bee Goblin',
       quantity: 'Quantity: 1',
       tags: ['Race: Goblin', 'Creature Type: Humanoid', 'Size: Small', 'Class: Fighter', 'Weapon: Sword'],
+      location: 'Location: NPCs'
+    },
+    {
+      src: 'Images/Miniatures/Spaceman_1.png',
+      name: 'Spaceman',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Gun', 'Armor: Heavy'],
       location: 'Location: NPCs'
     },
   ];
