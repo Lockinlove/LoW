@@ -43,15 +43,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   <option value="1125,537">S</option>
 </select>
 <label class="label" for="title">Title:</label>
-<input type="text" id="title" />
+<input type="text" id="title" placeholder="The Cursed Kingdom"/>
 <label class="label" for="type">Type:</label>
-<input type="text" id="type" />
+<input type="text" id="type" placeholder="Exorsism"/>
 <label class="label" for="description">Description:</label>
-<input type="text" id="description" />
+<input type="text" id="description" placeholder="The village of Delmaria is plagued by darkness ever since..."/>
 <label class="label" for="difficulty">Difficulty:</label>
-<input type="text" id="difficulty" />
+<input type="text" id="difficulty" placeholder="Rank 7"/>
 <label class="label" for="reward">Reward:</label>
-<input type="text" id="reward" />
+<input type="text" id="reward" placeholder="1000 gold"/>
 <br />
 <div class="button-container">
 <button id="show-button" onclick="showPoster()">Show</button>
@@ -90,17 +90,21 @@ var templateOn = `
         <option value="1125,537">S</option>
       </select>
       <label class="label" for="title">Title:</label>
-      <input type="text" id="title" />
+      <input type="text" id="title" placeholder="WANTED"/>
       <label class="label" for="bounty">Bounty:</label>
-      <input type="text" id="bounty" />
+      <input type="text" id="bounty" placeholder="500g alive, 100g dead"/>
       <label class="label" for="image">Image:</label>
-      <input type="text" id="image" />
+      <input type="text" id="image" placeholder="Goblin.png"/>
       <label class="label" for="description">Description:</label>
-      <input type="text" id="description" />
+      <input type="text" id="description" placeholder="For the capture or death of the notorious bandit, Redbeard. Last seen in..."/>
       <label class="label" for="signature">Signature:</label>
-      <input type="text" id="signature" />
+      <input type="text" id="signature" placeholder="Gideon Bradford"/>
       <label class="label" for="seal">Seal:</label>
-      <input type="text" id="seal" />
+      <select id="seal" class="select-poster">
+        <option value="Images/Posters/Bounties/Seals/GovernmentSeal.png">Government</option>
+        <option value="Images/Posters/Bounties/Seals/ArmySeal.png">Army</option>
+        <option value="Images/Posters/Bounties/Seals/GuildSeal.png">Guild</option>
+      </select>
       <br />
       <div class="button-container">
       <button id="show-button" onclick="showPoster()">Show</button>
@@ -143,7 +147,7 @@ function print() {
         title: '${title}',
         bounty: '${bounty}',
         spaceing: '------------------------',
-        image: '${image}',
+        image: ''Images/Posters/Bounties/${image}',
         description: '${description}',
         signature: '${signature}',
         seal: '${seal}',
@@ -213,7 +217,7 @@ function addQuest(quest) {
   
     if (quest.image) {
       var image = document.createElement("img");
-      image.src = quest.image;
+      image.src = 'Images/Posters/Bounties/' + quest.image;
       image.classList.add("quest-image");
       content.appendChild(image);
     }
