@@ -1,197 +1,69 @@
+// WANTED POSTER EXAMPLE
+//    {
+//      title: 'WANTED',
+//      bounty: '500g alive, 100g dead',
+//      spaceing: '------------------------',
+//      image: 'Images/Posters/Bounties/Goblin.png',
+//      description: 'For the capture or death of the notorious bandit, Redbeard. Last seen in the vicinity of the Whispering Caves. Known to be armed and dangerous. Approach with caution.',
+//      signature: 'Sheriff of Delmaria',
+//      seal: 'Images/Posters/Bounties/Seals/GovernmentSeal.png',
+//      posterType: 'bounty1',
+//      x: 78,
+//      y: 78
+//    },
 // quests.js
 window.questsVelz = [
-    {
-      title: 'The Cursed Kingdom',
-      type: 'Retrival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster11',
-      x: 1125,
-      y: 537
+  {
+    title: 'Missing building in our village',
+    type: 'Civil unrest',
+    description: 'A bunch of common folk in a small village has sent in report of a few houses completely missing in their community and beg for help to resolve the issue and has sent in much more money than they should',
+    difficulty: 'Rank 2',
+    reward: '5 gold if the villagers are just confused, 30 if there is an actual problem',
+    posterType: 'poster5',
+    x: 259,
+    y: 60
     },
     {
-      title: 'WANTED',
-      bounty: '500g alive, 100g dead',
-      spaceing: '------------------------',
-      image: 'Images/Posters/Bounties/Goblin.png',
-      description: 'For the capture or death of the notorious bandit, Redbeard. Last seen in the vicinity of the Whispering Caves. Known to be armed and dangerous. Approach with caution.',
-      signature: 'Sheriff of Delmaria',
-      seal: 'Images/Posters/Bounties/Seals/GovernmentSeal.png',
-      posterType: 'bounty1',
-      x: 78,
-      y: 78
+    title: 'Temporary staff requested',
+    type: 'Manual labor',
+    description: 'A shop in Velz has requsted some extra hands for a big event they are holding',
+    difficulty: 'Rank 1',
+    reward: '2 Gold per participant',
+    posterType: 'poster6',
+    x: 1125,
+    y: 537
     },
     {
-      title: 'The Lost Artifact',
-      type: 'Scouting',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill.',
-      difficulty: 'Insanium',
-      reward: '5 hookers',
-      posterType: 'poster2',
-      x: 259,
-      y: 60
+    title: 'Need help moving a lot of boxes',
+    type: 'Manual labor',
+     description: 'A shop in the city has requested help moving all the merchandise from the front gate to a warehouse further into the city',
+     difficulty: 'Rank 1',
+     reward: '2 Gold per participant',
+     posterType: 'poster6',
+     x: 730,
+    y: 467
     },
     {
-      title: 'The Secret of the Whispering Caves',
-      type: 'Capturing',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.',
-      difficulty: 'Unknown',
-      reward: '10 Rubies',
-      posterType: 'poster3',
-      x: 485,
-      y: 97
-    },
-    {
-      title: 'The Journey to the Shattered Realm',
-      type: 'Security',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
-      difficulty: 'Nutjob',
-      reward: 'Staff of the Magi',
-      posterType: 'poster4',
+     title: 'No contact with Bask village',
+      type: 'Investigation and solution',
+      description: 'Recently a lot of people have complained about missing shipments, deals or the like from 1 farm and no one has dared to get close because of a "looming presence" Figure out what is going on and deal with it accordingly',
+      difficulty: 'Rank 3',
+      reward: '35 Gold',
+      seal: 'Images/Posters/Seals/GuildSeal.png',
+      posterType: 'poster1',
       x: 680,
       y: 50
-    },
-    {
-      title: 'The Curse of the Forbidden',
-      type: 'Escort',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
-      difficulty: 'Easy',
-      reward: '50000000 gold',
-      posterType: 'poster5',
-      x: 876,
-      y: 112
-    },
-    {
-      title: 'The Mysterious Island',
-      type: 'Pest control',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous',
-      difficulty: 'Very Hard',
-      reward: '10000 Platinum',
-      posterType: 'poster6',
-      x: 1079,
-      y: 87
-    },
-    {
-      title: 'The Sands of Time',
-      type: 'Tournament',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed.',
-      difficulty: 'Unknown',
-      reward: 'Fire sigil',
-      posterType: 'poster7',
+      },
+      {
+      title: 'Missing in the woods',
+      type: 'Investigation',
+      description: 'Recently a lot of people have gone missing in a forest on the outskirts of Velz and little to no traces have been found on them missing people or where they have disapeared to but the few leads we have, have all been found around the same area in the forest.',
+      difficulty: 'Rank 2',
+      reward: '20 gold + 10 gold for each rescued person',
+      seal: 'Images/Posters/Seals/GuildSeal.png',
+      posterType: 'poster3',
       x: 77,
       y: 315
-    },
-    {
-      title: 'The Elemental Trials',
-      type: 'Survival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen.',
-      difficulty: 'Insane',
-      reward: 'Token',
-      posterType: 'poster8',
-      x: 250,
-      y: 250
-    },
-    {
-      title: 'The Secret of the Whispering Caves',
-      type: 'Assasination',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
-      difficulty: 'S rank',
-      reward: '900000 bucks',
-      posterType: 'poster1',
-      x: 523,
-      y: 489
-    },
-    {
-      title: 'The Ghost Ship',
-      type: 'Water exploration',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster9',
-      x: 487,
-      y: 390
-    },
-    {
-      title: 'The Shadows of Eldritch Hollow',
-      type: 'Exorsism',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster10',
-      x: 665,
-      y: 300
-    },
-    {
-      title: 'The Secret of the Whispering Caves',
-      type: 'Assasination',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps',
-      difficulty: 'S rank',
-      reward: '20000 bucks',
-      posterType: 'poster3',
-      x: 1030,
-      y: 447
-    },
-    {
-      title: 'The Cursed Kingdom',
-      type: 'Retrival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster11',
-      x: 921,
-      y: 387
-    },
-    {
-      title: 'The Lost Labyrinth',
-      type: 'Locating',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness. Delmaria is plagued by darkness',
-      difficulty: 'Very hard',
-      reward: '',
-      posterType: 'poster12',
-      x: 1120,
-      y: 267
-    },
-    {
-      title: 'The Cursed Kingdom',
-      type: 'Retrival',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The village of Delmaria is plagued by darkness.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster11',
-      x: 198,
-      y: 567
-    },
-    {
-      title: 'Moonstone Castle',
-      type: 'Inflantry',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster13',
-      x: 67,
-      y: 510
-    },
-    {
-      title: 'The Whispered Prophecy',
-      type: 'Sneak',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light.',
-      difficulty: '',
-      reward: '',
-      posterType: 'poster14',
-      x: 300,
-      y: 454
-    },
-    {
-      title: 'The Journey to the Shattered Realm',
-      type: 'Security',
-      description: 'The village of Delmaria is plagued by darkness ever since the Cursed Amulet was stolen from the Temple of Light. The amulet\'s power has corrupted the land, causing crops to wither and villagers to fall ill. Journey through treacherous catacombs, face deadly traps, and battle undead guardians to reclaim the amulet and restore light to Delmaria.light to Delmaria.light to Delmaria.light to',
-      difficulty: 'Nutjob',
-      reward: 'Staff of the Fire',
-      posterType: 'poster4',
-      x: 730,
-      y: 467
-    },
-    // Add more quests as needed
+      },           
   ];
-  
+// Add more quests as needed
