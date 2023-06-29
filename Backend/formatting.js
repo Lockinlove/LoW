@@ -52,13 +52,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <input type="text" id="difficulty" placeholder="Rank 7"/>
 <label class="label" for="reward">Reward:</label>
 <input type="text" id="reward" placeholder="1000 gold"/>
+<label class="label" for="seal">Seal:</label>
+<select id="seal" class="select-poster">
+  <option value="">None</option>
+  <option value="Images/Posters/Seals/GovernmentSeal.png">Government</option>
+  <option value="Images/Posters/Seals/ArmySeal.png">Army</option>
+  <option value="Images/Posters/Seals/GuildSeal.png">Guild</option>
+</select>
 <br />
 <div class="button-container">
 <button id="show-button" onclick="showPoster()">Show</button>
 <button onclick="resetPoster()">Reset</button>
 </div>
 <img src="Images/Posters/Posters.png" alt="Posters" class="posters">
-<img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">`;
+<img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">
+`;
 
 var templateOn = ` 
 <h3>Poster Details:</h3>
@@ -101,9 +109,10 @@ var templateOn = `
       <input type="text" id="signature" placeholder="Gideon Bradford"/>
       <label class="label" for="seal">Seal:</label>
       <select id="seal" class="select-poster">
-        <option value="Images/Posters/Bounties/Seals/GovernmentSeal.png">Government</option>
-        <option value="Images/Posters/Bounties/Seals/ArmySeal.png">Army</option>
-        <option value="Images/Posters/Bounties/Seals/GuildSeal.png">Guild</option>
+        <option value="">None</option>
+        <option value="Images/Posters/Seals/GovernmentSeal.png">Government</option>
+        <option value="Images/Posters/Seals/ArmySeal.png">Army</option>
+        <option value="Images/Posters/Seals/GuildSeal.png">Guild</option>
       </select>
       <br />
       <div class="button-container">
@@ -111,7 +120,8 @@ var templateOn = `
       <button onclick="resetPoster()">Reset</button>
     </div>
       <img src="Images/Posters/Posters.png" alt="Posters" class="posters">
-      <img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">`;
+      <img src="Images/Posters/PosterLocations.png" alt="Posters" class="posters">
+`;
 
 document.getElementById("toggle-switch").addEventListener('change', function(event) {
   if (event.target.checked) {
@@ -130,6 +140,7 @@ function print() {
   var variation = document.getElementById("poster-variation").value;
   var title = document.getElementById("title").value;
   var description = document.getElementById("description").value;
+  var seal = document.getElementById("seal").value;
   // Extract x and y values
   var coordinates = document.getElementById("poster-location").value;
   var [x, y] = coordinates.split(',').map(value => parseInt(value.trim()));
@@ -141,7 +152,6 @@ function print() {
     var bounty = document.getElementById("bounty").value;
     var image = document.getElementById("image").value;
     var signature = document.getElementById("signature").value;
-    var seal = document.getElementById("seal").value;
     formattedString = `
       {
         title: '${title}',
@@ -168,6 +178,7 @@ function print() {
         description: '${description}',
         difficulty: '${difficulty}',
         reward: '${reward}',
+        seal: '${seal}',
         posterType: '${variation}',
         x: ${x},
         y: ${y}
@@ -250,7 +261,7 @@ function addQuest(quest) {
     content.appendChild(description);
     }
   
-    if (quest.signature || quest.seal) {
+    if (quest.bounty) {
       var signSealContainer = document.createElement("div");
       signSealContainer.classList.add("quest-signseal-container"); // Add class here
     
@@ -269,7 +280,7 @@ function addQuest(quest) {
       }
     
       content.appendChild(signSealContainer);
-    }  
+    }
   
     if (quest.difficulty) {
     var difficulty = document.createElement("p");
@@ -283,7 +294,14 @@ function addQuest(quest) {
     reward.innerText = `Reward: ${quest.reward}`;
     reward.classList.add("quest-reward"); // Add class here
     content.appendChild(reward);
-    } 
+    }
+
+    if (!(quest.bounty) && quest.seal) {
+      var seal = document.createElement("img");
+      seal.src = quest.seal;
+      seal.classList.add("quest-seal");
+      content.appendChild(seal);
+    }
   
     poster.appendChild(content);
 
@@ -351,6 +369,7 @@ function showPoster() {
   var variation = document.getElementById("poster-variation").value;
   var title = document.getElementById("title").value;
   var description = document.getElementById("description").value;
+  var seal = document.getElementById("seal").value;  // get the seal value here
   
   var quest = {};
 
@@ -359,7 +378,6 @@ function showPoster() {
     var bounty = document.getElementById("bounty").value;
     var image = document.getElementById("image").value;
     var signature = document.getElementById("signature").value;
-    var seal = document.getElementById("seal").value;
 
     quest = {
       title: title,
@@ -367,7 +385,7 @@ function showPoster() {
       image: image,
       description: description,
       signature: signature,
-      seal: seal,
+      seal: seal,   // add the seal value to the bounty object
       posterType: variation
     };
   } else {
@@ -382,6 +400,7 @@ function showPoster() {
       description: description,
       difficulty: difficulty,
       reward: reward,
+      seal: seal,  // add the seal value to the quest object
       posterType: variation
     };
   }
@@ -416,5 +435,6 @@ function resetPoster() {
     document.getElementById("description").value = "";
     document.getElementById("difficulty").value = "";
     document.getElementById("reward").value = "";
+    document.getElementById("seal").value = "";
   }
 }

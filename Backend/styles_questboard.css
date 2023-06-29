@@ -215,6 +215,13 @@
   font-size: 10px;
   color: #000;
 }
+.poster1 .quest-seal {
+  position: absolute;
+  right: 17px;
+  bottom: 21px;
+  width: 35px;
+  height: 35px;
+}
 
 /* ######### POSTER 2 ######### */
 .poster2 {
@@ -257,8 +264,17 @@
 }
 .poster2 .quest-reward {
   margin-top: 0px;
+  padding-right: 20%;
+  padding-left: 20%;
   font-size: 10px;
   color: #000;
+}
+.poster2 .quest-seal {
+  position: absolute;
+  left: 17px;
+  bottom: 113px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ######### POSTER 3 ######### */
@@ -302,8 +318,17 @@
 }
 .poster3 .quest-reward {
   margin-top: 0px;
+  padding-right: 20%;
+  padding-left: 20%;
   font-size: 10px;
   color: #000;
+}
+.poster3 .quest-seal {
+  position: absolute;
+  left: 20px;
+  bottom: 23px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ######### POSTER 4 ######### */
@@ -350,6 +375,13 @@
   font-size: 10px;
   color: #000;
 }
+.poster4 .quest-seal {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  width: 35px;
+  height: 35px;
+}
 
 /* ######### POSTER 5 ######### */
 .poster5 {
@@ -392,8 +424,17 @@
 }
 .poster5 .quest-reward {
   margin-top: 0px;
+  padding-right: 20%;
+  padding-left: 20%;
   font-size: 10px;
   color: #000;
+}
+.poster5 .quest-seal {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ######### POSTER 6 ######### */
@@ -439,6 +480,13 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
+}
+.poster6 .quest-seal {
+  position: absolute;
+  right: 17px;
+  bottom: 15px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ######### POSTER 7 ######### */
@@ -487,6 +535,9 @@
   font-size: 10px;
   color: #000;
 }
+.poster7 .quest-seal {
+  opacity: 0;
+}
 
 /* ######### POSTER 8 ######### */
 .poster8 {
@@ -533,6 +584,9 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
+}
+.poster8 .quest-seal {
+  opacity: 0;
 }
 
 /* ######### POSTER 9 ######### */
@@ -581,6 +635,9 @@
   font-size: 10px;
   color: #000;
 }
+.poster9 .quest-seal {
+  opacity: 0;
+}
 
 /* ######### POSTER 10 ######### */
 .poster10 {
@@ -627,6 +684,9 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
+}
+.poster10 .quest-seal {
+  opacity: 0;
 }
 
 /* ######### POSTER 11 ######### */
@@ -675,6 +735,9 @@
   font-size: 10px;
   color: #000;
 }
+.poster11 .quest-seal {
+  opacity: 0;
+}
 
 /* ######### POSTER 12 ######### */
 .poster12 {
@@ -721,7 +784,9 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
-
+}
+.poster12 .quest-seal {
+  opacity: 0;
 }
 
 /* ######### POSTER 13 ######### */
@@ -769,7 +834,9 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
-
+}
+.poster13 .quest-seal {
+  opacity: 0;
 }
 
 /* ######### POSTER 14 ######### */
@@ -819,5 +886,7 @@
   margin-top: 0px;
   font-size: 10px;
   color: #000;
-
+}
+.poster14 .quest-seal {
+  opacity: 0;
 }
