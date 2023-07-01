@@ -1255,4 +1255,67 @@ window.miniatures = [
       tags: ['Race: Human', 'Creature Type: Humanoid', 'Size: Medium', 'Weapon: Gun', 'Armor: Heavy'],
       location: 'Location: NPCs'
     },
+    {
+      src: 'Images/Miniatures/GelatinousCube_1.png',
+      name: 'Large Gelatinous Cube',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Ooze', 'Size: Large'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/Cthulhufolk_2.png',
+      name: 'Cthulhufolk',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Cthulhufolk', 'Creature Type: Aberration', 'Size: Medium', 'Class: Sorcerer'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Gnoll_1.png',
+      name: 'Gnoll Sorcerer',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Gnoll', 'Creature Type: Humanoid', 'Size: Medium', 'Class: Sorcerer', 'Weapon: Staff'],
+      location: 'Location: Werewolves'
+    },
+    {
+      src: 'Images/Miniatures/TrollGoblin_1.png',
+      name: 'Troll-Blooded Goblin',
+      quantity: 'Quantity: 1',
+      tags: ['Race: Goblin', 'Subrace: Troll-Blooded', 'Creature Type: Humanoid', 'Size: Medium'],
+      location: 'Location: Monsters/Creatures'
+    },
+    {
+      src: 'Images/Miniatures/HeadlessHorseman_1.png',
+      name: 'Headless Horseman',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Large', 'Weapon: Scythe'],
+      location: 'Location: Undead'
+    },
+    {
+      src: 'Images/Miniatures/Banshee_2.png',
+      name: 'Banshee',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/BloodDemon_1.png',
+      name: 'Blood Demon',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Demon', 'Size: Large', 'Weapon: Great Sword'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/HornedDevil_1.png',
+      name: 'Horned Demon',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Demon', 'Size: Medium', 'Weapon: Staff', 'Features: Flight'],
+      location: 'Location: Demons'
+    },
+    {
+      src: 'Images/Miniatures/Necromancer_1.png',
+      name: 'Necromancer',
+      quantity: 'Quantity: 1',
+      tags: ['Creature Type: Undead', 'Size: Medium', 'Weapon: Daggers'],
+      location: 'Location: Undead'
+      }
   ];
