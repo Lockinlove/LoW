@@ -1,48 +1,60 @@
 document.addEventListener("DOMContentLoaded", function() {
-    function parseDate(dateStr) {
+    const monthsInYear = ["January", "February", "March", "April", "May", "September", "October", "November", "December"];
+
+    function isValidMonth(month) {
+        return monthsInYear.includes(month);
+    }
+
+    function customDateToDayCount(dateStr) {
         const [_, month, day, year] = dateStr.match(/(\w+) (\d+)[a-z]*, (\d+)/);
-        return new Date(`${month} ${day}, ${year}`);
+        if (!isValidMonth(month)) {
+            return null; // This will indicate an invalid date.
+        }
+        const monthIndex = monthsInYear.indexOf(month);
+        return (parseInt(year) * 270) + (monthIndex * 30) + (parseInt(day) - 1);
+    }
+
+    function getStatus(currentDayCount, startDayCount, endDayCount) {
+        if (startDayCount === null || endDayCount === null) return "Invalid Date";
+        if (currentDayCount < startDayCount) return "Upcoming";
+        else if (currentDayCount >= startDayCount && currentDayCount <= endDayCount) return "In Progress";
+        else return "Ended";
     }
 
     let displayedCurrentDateStr = document.querySelector(".current-date").textContent.replace("Current Date: ", "");
-    let currentDate = parseDate(displayedCurrentDateStr);
-    currentDate.setHours(0, 0, 0, 0); // Resetting time to midnight for accurate comparison
+    let currentDayCount = customDateToDayCount(displayedCurrentDateStr);
 
     let events = Array.from(document.querySelectorAll(".event"));
-
-    // Assign a status to each event and store it as a data attribute
     events.forEach(event => {
-        let startDate = parseDate(event.querySelector(".start-date").textContent);
-        let endDate = parseDate(event.querySelector(".end-date").textContent);
-        endDate.setHours(23, 59, 59, 999); // Setting time to end of day for accurate comparison
+        let startDateStr = event.querySelector(".start-date").textContent;
+        let endDateStr = event.querySelector(".end-date").textContent;
 
-        let status;
-        if (currentDate < startDate) {
-            status = "Upcoming";
-        } else if (currentDate >= startDate && currentDate <= endDate) {
-            status = "In Progress";
+        let startDayCount = customDateToDayCount(startDateStr);
+        let endDayCount = customDateToDayCount(endDateStr);
+
+        let status = getStatus(currentDayCount, startDayCount, endDayCount);
+
+        if (status === "Invalid Date") {
+            event.remove(); // This event has an invalid date and will be removed from the DOM.
         } else {
-            status = "Ended";
+            let statusSpan = event.querySelector(".status");
+            statusSpan.textContent = status;
+            statusSpan.className = "status " + status.toLowerCase().replace(" ", "-");
+
+            event.classList.add(status.toLowerCase().replace(" ", "-"));
+            event.dataset.status = status;
         }
-
-        let statusSpan = event.querySelector(".status");
-        statusSpan.textContent = status;
-        statusSpan.className = "status " + status.toLowerCase().replace(" ", "-");
-
-        // Add class to .event for additional styling if needed
-        event.classList.add(status.toLowerCase().replace(" ", "-"));
-
-        // Store the status in a data attribute for sorting
-        event.dataset.status = status;
     });
 
-    // Sort the events based on the status
+    // Sort and display the remaining events
+    events = events.filter(event => event.dataset.status !== "Invalid Date"); // Remove events with invalid dates from the array
+
     events.sort((a, b) => {
         const order = ["In Progress", "Upcoming", "Ended"];
         return order.indexOf(a.dataset.status) - order.indexOf(b.dataset.status);
     });
 
-    // Reinsert sorted events into the DOM
     let eventsList = document.querySelector(".events-list");
+    eventsList.innerHTML = ''; // Clear the list before re-adding events
     events.forEach(event => eventsList.appendChild(event));
 });
