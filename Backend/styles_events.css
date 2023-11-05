@@ -1,0 +1,67 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.current-date {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.events-list {
+    margin-top: 20px;
+}
+
+.event {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid #ffffff;
+}
+
+.event h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.event-status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event.upcoming {
+    border-left-color: #f39c12;
+}
+
+.event.in-progress {
+    border-left-color: #e74c3c;
+}
+
+.event.ended {
+    border-left-color: #2ecc71;
+}
+
+.status {
+    color: #3f51b5;
+    font-weight: normal;
+}
+
+/* Color coding the statuses */
+.status.upcoming {
+    color: #f39c12;
+}
+
+.status.in-progress {
+    color: #e74c3c;
+}
+
+.status.ended {
+    color: #2ecc71;
+}
