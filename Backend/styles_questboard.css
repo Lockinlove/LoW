@@ -15,7 +15,7 @@
 
 .quest-board-text {
   /* font-family: fantasy; */
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Ariel';
   position: absolute;
   top: -15px; /* Adjust the top value to position the text as desired */
   left: 50%; /* Center the text horizontally */
@@ -44,7 +44,7 @@
 }
 
 .poster {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Ariel';
   display: block;
   flex-direction: column;
   justify-content: center;
