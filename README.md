@@ -1,4 +1,4 @@
-# Wackdonalds
+# Wackdonalds test
 Github for my DnD miniature collection
 
 To update the miniature collection:
