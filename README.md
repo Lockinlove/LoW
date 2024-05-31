@@ -1,4 +1,4 @@
-# Wackdonalds test
+# Wackdonalds
 Github for my DnD miniature collection
 
 To update the miniature collection:
@@ -13,3 +13,7 @@ To update the miniature collection:
   tags: ['Race: XXX', 'Subrace: XXX', 'Creature Type: XXX','Size: XXX', 'Class: XXX', 'Gender: XXX', 'Weapon: XXX', 'Armor: XXX', 'Mount: XXX', 'Features: XXX, YYY, ZZZ'],
   location: 'Location: (Placement in cabinet)'
 },
+
+
+
+TESTER
