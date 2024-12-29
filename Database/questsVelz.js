@@ -76,8 +76,8 @@ window.questsVelz = [
     difficulty: 'Rank 2',
     reward: '100G',
     posterType: 'poster3',
-    x: 20,
-    y: 670
+    x: 67,
+    y: 510
    },
   {
     title: 'My child got taken',
@@ -86,8 +86,8 @@ window.questsVelz = [
     difficulty: 'Rank 2',
     reward: '60G',
     posterType: 'poster1',
-    x: 448,
-    y: 702
+    x: 300,
+    y: 454
    },
    {
     title: 'Wagon robbed',
