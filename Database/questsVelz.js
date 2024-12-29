@@ -14,11 +14,11 @@
 // quests.js
 window.questsVelz = [
   {
-    title: 'Missing building in our village',
-    type: 'Civil unrest',
-    description: 'A bunch of common folk in a small village has sent in report of a few houses completely missing in their community and beg for help to resolve the issue and has sent in much more money than they should',
+    title: 'Plants have come to life',
+    type: 'Mystery',
+    description: 'Farmers in the outer city has sent in a report saying all of his crops has started to come back to life, figure out whats going out and solve the problem',
     difficulty: 'Rank 2',
-    reward: '5 gold if the villagers are just confused, 75 if there is an actual problem',
+    reward: '90 gold',
     posterType: 'poster5',
     x: 259,
     y: 60
@@ -28,8 +28,8 @@ window.questsVelz = [
     title: 'Temporary staff requested',
     type: 'Manual labor',
     description: 'A shop in Velz has requsted some extra hands for a big event they are holding',
-    difficulty: 'Rank 1',
-    reward: '4 Gold per participant',
+    difficulty: 'Rank 3',
+    reward: '10 Gold per participant',
     posterType: 'poster6',
     x: 1125,
     y: 537
@@ -39,8 +39,8 @@ window.questsVelz = [
     title: 'Need help moving a lot of boxes',
     type: 'Manual labor',
      description: 'A shop in the city has requested help moving all the merchandise from the front gate to a warehouse further into the city',
-     difficulty: 'Rank 1',
-     reward: '4 Gold per participant',
+     difficulty: 'Rank 3',
+     reward: '10 Gold per participant',
      posterType: 'poster6',
      x: 730,
     y: 467
@@ -70,9 +70,9 @@ window.questsVelz = [
   },
 
    {
-    title: 'Killing of Wolves',
-    type: 'Hunt',
-    description: 'Our farm has been dealing with a lot of wolves harming our people and cattle and we need the adventures help to get rid of them',
+    title: 'Bringing back patients',
+    type: 'Find and bring back',
+    description: 'A group from the psychiatric hospital has escaped recently and we need help bringing them back',
     difficulty: 'Rank 2',
     reward: '100G',
     posterType: 'poster3',
@@ -83,7 +83,7 @@ window.questsVelz = [
     title: 'My child got taken',
     type: 'Recovery and threat elimination',
     description: 'When out gathering herbs and flower for some food my child Peter got taken by something and we dont have anyone on the farm that can fight, please help',
-    difficulty: 'Rank 1',
+    difficulty: 'Rank 2',
     reward: '60G',
     posterType: 'poster1',
     x: 448,
@@ -93,8 +93,8 @@ window.questsVelz = [
     title: 'Wagon robbed',
     type: 'Find and recover',
     description: 'While travelling towards the inner city of Velz a wagon was jumped and although no one was killed, all the good were stolen by what seemed like Goblins.',
-    difficulty: 'Rank 2',
-    reward: '40G + whatever you find that doesnt belong to the merchant',
+    difficulty: 'Rank 3',
+    reward: '60G + whatever you find that doesnt belong to the merchant',
     posterType: 'poster9',
     x: 237,
     y: 245
