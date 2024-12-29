@@ -80,11 +80,11 @@ window.questsVelz = [
     y: 510
    },
   {
-    title: 'My child got taken',
-    type: 'Recovery and threat elimination',
-    description: 'When out gathering herbs and flower for some food my child Peter got taken by something and we dont have anyone on the farm that can fight, please help',
+    title: 'People in alleys acting weird',
+    type: 'Investigation',
+    description: 'Reports from many people at night walking past alleys and seeing weird looking people acting really odd',
     difficulty: 'Rank 2',
-    reward: '60G',
+    reward: '85G',
     posterType: 'poster1',
     x: 300,
     y: 454
