@@ -57,18 +57,6 @@ window.questsVelz = [
       x: 680,
       y: 50
     },
-
-  {
-    title: 'Turn me back',
-    type: 'Transmutation',
-    description: 'Meet me at the alleyway just under the plateu',
-    difficulty: 'Rank 3',
-    reward: 'Magical favors',
-    posterType: 'poster8',
-    x: 860,
-    y: 270
-  },
-
    {
     title: 'Bringing back patients',
     type: 'Find and bring back',
