@@ -14,11 +14,16 @@
 
   <a href="index.html" id="back-button" class="button">&larr; Back</a>
 
+  <aside id="info-panel" aria-hidden="true">
+    <button id="info-panel-close" class="info-panel-close" aria-label="Close">&times;</button>
+    <div id="info-panel-body" class="info-panel-body"></div>
+  </aside>
+
   <div id="edit-panel" style="display: none;">
     <strong>Edit Mode</strong><br>
     Click the map to get coords you can paste into Database/markers.js.<br>
     <div style="margin-top: 8px;">
-      Last click: <code id="coords">—</code>
+      Last click: <code id="coords">&mdash;</code>
     </div>
     <div style="margin-top: 8px; font-size: 0.8em; opacity: 0.8;">
       Remove <code>?edit=1</code> from the URL to hide this panel.
