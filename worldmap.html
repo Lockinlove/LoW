@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worldmap</title>
-    <link rel="stylesheet" href="Backend/styles_worldmap.css">
-    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
-    <script src="Backend/worldmap.js"></script>
-    <script src="Database/cities.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Map - Legends of Wackdonalds</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="Backend/styles_worldmap.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="Database/markers.js"></script>
 </head>
-    <div id="info-box">
-    </div>    
-    <div id="map-container">
-        <embed src="/Images/Maps/WorldMinimized.svg" type="image/svg+xml" id="map"/>
+<body>
+  <div id="map"></div>
+
+  <a href="index.html" id="back-button" class="button">&larr; Back</a>
+
+  <div id="edit-panel" style="display: none;">
+    <strong>Edit Mode</strong><br>
+    Click the map to get coords you can paste into Database/markers.js.<br>
+    <div style="margin-top: 8px;">
+      Last click: <code id="coords">—</code>
     </div>
-    <div id="zoom-controls">
-        <button id="zoom-in">+</button>
-        <button id="zoom-out">-</button>
-        <button id="reset">↻</button>
-    </div>    
+    <div style="margin-top: 8px; font-size: 0.8em; opacity: 0.8;">
+      Remove <code>?edit=1</code> from the URL to hide this panel.
+    </div>
+  </div>
+
+  <script src="Backend/worldmap.js"></script>
 </body>
 </html>
