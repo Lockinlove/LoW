@@ -86,7 +86,7 @@
   // Only show when NOT already in edit mode. Tweak COMPASS_COORDS [imageY, imageX]
   // to line up with the center of the compass rose on the map image.
   if (!editing) {
-    const COMPASS_COORDS = [136, 103];
+    const COMPASS_COORDS = [111, 111];
     const compassIcon = L.divIcon({
       className: "compass-edit-btn",
       html: '<div class="compass-edit-hotspot"></div>',
@@ -111,7 +111,7 @@
     let ghost = null;
     map.on("click", (e) => {
       const [y, x] = fromLeaflet(e.latlng);
-      if (coordsEl) coordsEl.textContent = `coords: ${y}, ${x}`;
+      if (coordsEl) coordsEl.textContent = `coords: [${y}, ${x}]`;
       if (ghost) ghost.remove();
       ghost = L.circleMarker(e.latlng, {
         radius: 8,
