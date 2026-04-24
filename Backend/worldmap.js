@@ -86,7 +86,7 @@
   // Only show when NOT already in edit mode. Tweak COMPASS_COORDS [imageY, imageX]
   // to line up with the center of the compass rose on the map image.
   if (!editing) {
-    const COMPASS_COORDS = [120, 150];
+    const COMPASS_COORDS = [136, 103];
     const compassIcon = L.divIcon({
       className: "compass-edit-btn",
       html: '<div class="compass-edit-hotspot"></div>',
