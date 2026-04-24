@@ -81,6 +81,28 @@
 
   // ---- Edit mode (?edit=1) ----
   const editing = new URLSearchParams(location.search).get("edit") === "1";
+
+  // ---- Secret edit-mode button on the compass (hover to reveal) ----
+  // Only show when NOT already in edit mode. Tweak COMPASS_COORDS [imageY, imageX]
+  // to line up with the center of the compass rose on the map image.
+  if (!editing) {
+    const COMPASS_COORDS = [120, 150];
+    const compassIcon = L.divIcon({
+      className: "compass-edit-btn",
+      html: '<div class="compass-edit-hotspot"></div>',
+      iconSize: [40, 40],
+      iconAnchor: [20, 20]
+    });
+    const compassMarker = L.marker(toLeaflet(COMPASS_COORDS), {
+      icon: compassIcon,
+      interactive: true,
+      keyboard: false
+    }).addTo(map);
+    compassMarker.on("click", () => {
+      window.location.href = "worldmap.html?edit=1";
+    });
+  }
+
   if (editing) {
     const editPanel = document.getElementById("edit-panel");
     const coordsEl  = document.getElementById("coords");
