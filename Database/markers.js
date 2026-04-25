@@ -90,7 +90,7 @@ window.mapMarkers = [
     name: "Khal'Ssari",
     title: "Khal'Ssari &mdash; The City Below",
     coords: [176, 634],
-    thematic: "Images/Thematic/khalssari.jpg",
+    thematic: "Images/Thematic/khalssari.png",
     description:
       "There are cities that reach for the sky, and there are cities that hide from it. " +
       "Khal'Ssari does neither. It descends." +
