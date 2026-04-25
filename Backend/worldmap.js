@@ -38,6 +38,23 @@
   const panelBody = document.getElementById("info-panel-body");
   const panelClose = document.getElementById("info-panel-close");
 
+  // ---- Full-screen image lightbox ----
+  // Built once and reused. Click anywhere on the overlay or press Escape to close.
+  const lightbox = document.createElement("div");
+  lightbox.className = "thematic-lightbox";
+  lightbox.innerHTML = '<img alt="">';
+  document.body.appendChild(lightbox);
+  const lightboxImg = lightbox.querySelector("img");
+
+  function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.classList.add("open");
+  }
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+  }
+  lightbox.addEventListener("click", closeLightbox);
+
   function openPanelFor(m) {
     const parts = [];
     if (m.thematic) {
@@ -50,9 +67,8 @@
     }
     if (m.cityMap) {
       parts.push(
-        `<a href="${m.cityMap}" target="_blank" rel="noopener">` +
         `<img class="info-citymap" src="${m.cityMap}" alt="${m.name} city map">` +
-        `<div class="info-hint">Click map to open full size</div></a>`
+        `<div class="info-hint">Click map to enlarge</div>`
       );
     }
     parts.push(`</div>`);
@@ -61,6 +77,11 @@
     panelBody.scrollTop = 0;
     panel.classList.add("open");
     document.body.classList.add("panel-open");
+
+    // Wire enlarge-on-click for any images inside the panel.
+    panelBody.querySelectorAll(".info-thematic, .info-citymap").forEach((img) => {
+      img.addEventListener("click", () => openLightbox(img.src));
+    });
   }
 
   function closePanel() {
@@ -70,12 +91,33 @@
 
   if (panelClose) panelClose.addEventListener("click", closePanel);
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closePanel();
+    if (e.key === "Escape") {
+      // Lightbox closes first if it's open; otherwise close the side panel.
+      if (lightbox.classList.contains("open")) {
+        closeLightbox();
+      } else {
+        closePanel();
+      }
+    }
   });
 
   // ---- Markers ----
+  // L.circleMarker draws a small SVG dot instead of the default tall pin so
+  // it doesn't cover biome labels. Hovering shows the city's name as a tooltip.
   (window.mapMarkers || []).forEach((m) => {
-    const marker = L.marker(toLeaflet(m.coords), { title: m.name }).addTo(map);
+    const marker = L.circleMarker(toLeaflet(m.coords), {
+      radius: 8,
+      weight: 2,
+      color: "#ffffff",
+      fillColor: "#ff5252",
+      fillOpacity: 0.95,
+      className: "world-marker"
+    }).addTo(map);
+    marker.bindTooltip(m.name, {
+      direction: "top",
+      offset: [0, -10],
+      className: "world-marker-tooltip"
+    });
     marker.on("click", () => openPanelFor(m));
   });
 
