@@ -126,6 +126,11 @@ body.panel-open #back-button {
   max-height: 240px;
   object-fit: cover;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: zoom-in;
+  transition: filter 0.15s;
+}
+.info-thematic:hover {
+  filter: brightness(1.08);
 }
 
 .info-content {
@@ -188,6 +193,57 @@ body.panel-open #back-button {
 .compass-edit-hotspot:hover {
   background-color: rgba(255, 220, 100, 0.25);
   box-shadow: 0 0 14px 5px rgba(255, 220, 100, 0.45);
+}
+
+/* World markers — small SVG dots from L.circleMarker.
+   Targeted by the className: "world-marker" option in worldmap.js.
+   Leaflet renders circleMarkers as <path> elements inside the SVG overlay. */
+.world-marker {
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+.world-marker:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 82, 82, 0.85));
+}
+
+/* Custom tooltip shown on marker hover (set via bindTooltip className). */
+.leaflet-tooltip.world-marker-tooltip {
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  padding: 4px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.leaflet-tooltip.world-marker-tooltip::before {
+  border-top-color: rgba(0, 0, 0, 0.82);
+}
+
+/* Lightbox — full-screen overlay shown when a panel image is clicked. */
+.thematic-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  cursor: zoom-out;
+}
+.thematic-lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.thematic-lightbox img {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive: on narrow screens, panel takes full width */
