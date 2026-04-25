@@ -13,7 +13,7 @@ window.mapMarkers = [
     id: "dullen",
     name: "Dullen",
     title: "Capital City of Dullen",
-    coords: [385, 790],
+    coords: [426, 818],
     thematic: "Images/Thematic/dullen.jpg",
     cityMap: "Images/Maps/dullen-city.jpg",
     description:
@@ -40,7 +40,7 @@ window.mapMarkers = [
     id: "letty",
     name: "Letty",
     title: "City of Letty",
-    coords: [85, 810],
+    coords: [100, 887],
     thematic: "Images/Thematic/letty.jpg",
     // cityMap intentionally omitted until we have one
     description:
@@ -62,7 +62,7 @@ window.mapMarkers = [
     id: "velz",
     name: "Velz",
     title: "City of Velz",
-    coords: [800, 215],
+    coords: [826, 180],
     thematic: "Images/Thematic/velz.jpg",
     cityMap: "Images/Maps/velz-city.jpg",
     description:
