@@ -101,6 +101,21 @@
     }
   });
 
+  // ---- Smart back button ----
+  // Hierarchical back: if the info panel is open, "Back" closes it instead of
+  // navigating away. This matches the user's mental model — "back" means one
+  // step back in the current flow, not a leap out of the map.
+  const backButton = document.getElementById("back-button");
+  if (backButton) {
+    backButton.addEventListener("click", (e) => {
+      if (document.body.classList.contains("panel-open")) {
+        e.preventDefault();
+        closePanel();
+      }
+      // Otherwise let the link navigate to index.html as normal.
+    });
+  }
+
   // ---- Markers ----
   // L.circleMarker draws a small SVG dot instead of the default tall pin so
   // it doesn't cover biome labels. Hovering shows the city's name as a tooltip.
