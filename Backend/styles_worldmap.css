@@ -251,7 +251,18 @@ body.panel-open #back-button {
   #info-panel {
     width: 100%;
   }
+  /* The panel goes full-width on mobile, so the back button has no room to
+     sit beside it without colliding with the X close button. Hide it while
+     the panel is open — the panel's own X (and the smart Back behaviour
+     wired up in worldmap.js) cover the same intent. */
   body.panel-open #back-button {
-    transform: translateX(calc(100vw - 140px));
+    opacity: 0;
+    pointer-events: none;
+  }
+  /* Slightly bigger X target on mobile — closer to the 44px touch guidance. */
+  .info-panel-close {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
   }
 }
