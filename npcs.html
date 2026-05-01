@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tavern Board - Legends of Wackdonalds</title>
+  <link rel="stylesheet" href="Backend/styles_npcs.css">
+</head>
+<body>
+  <a href="index.html" id="back-button" class="button">&larr; Back</a>
+
+  <main id="board">
+    <header class="board-header">
+      <h1>The Tavern Board</h1>
+      <p class="board-subtitle">Names worth remembering</p>
+      <button id="edit-toggle" class="edit-btn" type="button">
+        <span class="edit-icon">&#9998;</span>
+        <span class="edit-label">Edit board</span>
+      </button>
+    </header>
+
+    <section id="empty-state" class="empty-state" hidden>
+      <p>The board is empty.</p>
+      <p class="empty-state-sub">Be the first to pin a name here.</p>
+    </section>
+
+    <section id="npcs-list" class="cards-grid" aria-live="polite">
+      <p class="board-loading">Reading the board&hellip;</p>
+    </section>
+
+    <button id="add-npc-btn" class="add-npc-btn" type="button" hidden>
+      <span class="add-npc-icon">+</span>
+      <span>Pin a new name</span>
+    </button>
+  </main>
+
+  <!-- Pin modal: asked once when entering edit mode for the first time -->
+  <div id="pin-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <h2>The board is locked</h2>
+      <p class="modal-sub">Enter the party password to edit the board.</p>
+      <form id="pin-form">
+        <input type="password" name="pin" autocomplete="off" required placeholder="Password">
+        <p class="modal-error" id="pin-error" hidden>Wrong password.</p>
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" id="pin-cancel">Cancel</button>
+          <button type="submit" class="primary-btn">Unlock</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit modal: used for both create and edit -->
+  <div id="edit-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <h2 id="edit-modal-title">Pin a new name</h2>
+      <form id="edit-form">
+        <input type="hidden" name="id">
+
+        <label class="field">
+          <span class="field-title">Name</span>
+          <span class="field-hint">What does this NPC go by?</span>
+          <input type="text" name="name" required maxlength="120">
+        </label>
+
+        <label class="field">
+          <span class="field-title">Remembrance</span>
+          <span class="field-hint">Where did you meet them? Where can you find them?</span>
+          <textarea name="remembrance" rows="3" maxlength="600"></textarea>
+        </label>
+
+        <label class="field">
+          <span class="field-title">Notes</span>
+          <span class="field-hint">Anything else worth remembering.</span>
+          <textarea name="notes" rows="6" maxlength="2000"></textarea>
+        </label>
+
+        <p class="modal-error" id="edit-error" hidden></p>
+
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" id="edit-cancel">Cancel</button>
+          <button type="submit" class="primary-btn" id="edit-save">Pin to the board</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Confirm-delete modal -->
+  <div id="delete-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <h2>Tear this name from the board?</h2>
+      <p class="modal-sub" id="delete-modal-name"></p>
+      <div class="modal-actions">
+        <button type="button" class="ghost-btn" id="delete-cancel">Keep it</button>
+        <button type="button" class="danger-btn" id="delete-confirm">Tear it down</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Backend/npcs.js"></script>
+</body>
+</html>
