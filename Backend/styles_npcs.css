@@ -290,6 +290,7 @@ body.edit-mode .add-npc-btn { display: inline-flex; }
   justify-content: center;
   padding: 24px;
 }
+.modal[hidden] { display: none; }
 .modal-backdrop {
   position: absolute;
   inset: 0;
