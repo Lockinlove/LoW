@@ -1,0 +1,436 @@
+/* styles_npcs.css — the Tavern Board.
+   Warm parchment + aged-wood vibe, distinct from the rest of the site. */
+
+:root {
+  --parchment: #efe2c2;
+  --parchment-dark: #d9c79f;
+  --parchment-shadow: rgba(60, 40, 15, 0.25);
+  --wood-deep: #2b1c10;
+  --wood: #4a311c;
+  --wood-light: #6b4628;
+  --ink: #2a1d10;
+  --ink-soft: #5a4327;
+  --accent: #8b3a2b;
+  --accent-deep: #6e2a1d;
+  --gold: #c8a14a;
+  --danger: #a23a2b;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Georgia", serif;
+  color: var(--ink);
+  /* Warm wood-grain backdrop with a soft vignette */
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 220, 160, 0.18) 0%, transparent 55%),
+    repeating-linear-gradient(
+      90deg,
+      #3a2615 0px,
+      #43301c 2px,
+      #3a2615 4px,
+      #4a3621 7px
+    ),
+    var(--wood-deep);
+  background-attachment: fixed;
+}
+
+/* Back button (matches the rest of the site) */
+#back-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  transition: background-color 0.15s;
+}
+#back-button:hover {
+  background-color: rgba(63, 81, 181, 0.95);
+}
+
+/* Main board container */
+#board {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px 80px;
+}
+
+/* ---- Header / sign ---- */
+
+.board-header {
+  text-align: center;
+  margin-bottom: 44px;
+  position: relative;
+}
+
+.board-header h1 {
+  font-family: "Cinzel", "Trajan Pro", "Georgia", serif;
+  font-size: clamp(40px, 6vw, 64px);
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: #f4e3b8;
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.55),
+    0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+.board-subtitle {
+  font-style: italic;
+  color: #d8c79f;
+  margin: 8px 0 24px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.edit-btn {
+  background: linear-gradient(180deg, #6b4528 0%, #4a311c 100%);
+  color: #f1e0b3;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: filter 0.15s, transform 0.05s;
+}
+.edit-btn:hover { filter: brightness(1.12); }
+.edit-btn:active { transform: translateY(1px); }
+.edit-btn .edit-icon { font-size: 18px; }
+
+body.edit-mode .edit-btn {
+  background: linear-gradient(180deg, #c8a14a 0%, #8a6b25 100%);
+  color: #1a1208;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ---- Cards grid ---- */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.board-loading,
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #d8c79f;
+  font-style: italic;
+  padding: 60px 20px;
+}
+.empty-state p { margin: 4px 0; font-size: 18px; }
+.empty-state-sub { color: #b9a880; }
+
+/* Each NPC card looks like a piece of parchment pinned to a board */
+.npc-card {
+  background:
+    radial-gradient(ellipse at 30% 10%, rgba(255, 240, 200, 0.6) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(180, 140, 90, 0.18) 0%, transparent 60%),
+    linear-gradient(180deg, #efe2c2 0%, #e3d2a8 100%);
+  color: var(--ink);
+  border: 1px solid rgba(80, 50, 20, 0.4);
+  border-radius: 4px;
+  padding: 22px 22px 20px;
+  position: relative;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.15),
+    0 8px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  /* Slight rotation for tavern-board feel; randomized per-card via :nth-child */
+}
+.npc-card:nth-child(3n)   { transform: rotate(-0.8deg); }
+.npc-card:nth-child(3n+1) { transform: rotate(0.6deg); }
+.npc-card:nth-child(3n+2) { transform: rotate(-0.3deg); }
+.npc-card:hover {
+  transform: rotate(0deg) translateY(-2px);
+  box-shadow:
+    0 3px 0 rgba(0, 0, 0, 0.2),
+    0 12px 26px rgba(0, 0, 0, 0.55);
+}
+
+/* Tiny "nail" at the top */
+.npc-card::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #b08a3a 0%, #5e4218 60%, #2c1c08 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.npc-name {
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 22px;
+  margin: 6px 0 10px;
+  color: var(--accent-deep);
+  letter-spacing: 0.02em;
+  text-align: center;
+  border-bottom: 1px dashed rgba(80, 50, 20, 0.45);
+  padding-bottom: 8px;
+}
+
+.npc-section {
+  margin-top: 12px;
+}
+.npc-section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.npc-section-body {
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: var(--ink-soft);
+}
+.npc-section-body.empty {
+  color: rgba(90, 67, 39, 0.55);
+  font-style: italic;
+}
+
+/* Per-card edit/delete actions, only shown in edit mode */
+.npc-actions {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  gap: 6px;
+}
+body.edit-mode .npc-actions { display: flex; }
+
+.icon-btn {
+  background: rgba(255, 248, 220, 0.7);
+  border: 1px solid rgba(80, 50, 20, 0.4);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--wood);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s, color 0.12s;
+}
+.icon-btn:hover {
+  background: var(--wood);
+  color: #f3e2b6;
+}
+.icon-btn.danger:hover {
+  background: var(--danger);
+  color: #fff;
+}
+
+/* ---- Add NPC button (visible in edit mode only) ---- */
+
+.add-npc-btn {
+  display: none;
+  margin: 36px auto 0;
+  padding: 14px 24px;
+  background: linear-gradient(180deg, #8b3a2b 0%, #6e2a1d 100%);
+  color: #fbe9c2;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 17px;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: filter 0.15s;
+}
+body.edit-mode .add-npc-btn { display: inline-flex; }
+.add-npc-btn:hover { filter: brightness(1.12); }
+.add-npc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--gold);
+  color: var(--ink);
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ---- Modals ---- */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 5, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+.modal-card {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 30% 10%, rgba(255, 240, 200, 0.5) 0%, transparent 60%),
+    linear-gradient(180deg, #efe2c2 0%, #e3d2a8 100%);
+  color: var(--ink);
+  border: 1px solid rgba(80, 50, 20, 0.5);
+  border-radius: 6px;
+  padding: 28px 28px 22px;
+  width: min(540px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.2),
+    0 14px 40px rgba(0, 0, 0, 0.55);
+}
+.modal-card h2 {
+  margin: 0 0 6px;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 24px;
+  color: var(--accent-deep);
+}
+.modal-sub {
+  margin: 0 0 16px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.field {
+  display: block;
+  margin-bottom: 16px;
+}
+.field-title {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.field-hint {
+  display: block;
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.field input,
+.field textarea,
+#pin-form input {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(255, 250, 230, 0.85);
+  border: 1px solid rgba(80, 50, 20, 0.45);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  resize: vertical;
+  box-sizing: border-box;
+}
+.field input:focus,
+.field textarea:focus,
+#pin-form input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  background: #fff8e0;
+}
+
+#pin-form input {
+  margin-bottom: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.primary-btn {
+  background: linear-gradient(180deg, #8b3a2b 0%, #6e2a1d 100%);
+  color: #fbe9c2;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transition: filter 0.15s;
+}
+.primary-btn:hover { filter: brightness(1.12); }
+.primary-btn:disabled { opacity: 0.5; cursor: progress; }
+
+.ghost-btn {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1px solid rgba(80, 50, 20, 0.5);
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.ghost-btn:hover {
+  background: rgba(80, 50, 20, 0.1);
+  color: var(--ink);
+}
+
+.danger-btn {
+  background: linear-gradient(180deg, #a23a2b 0%, #7a261a 100%);
+  color: #fbe9c2;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.danger-btn:hover { filter: brightness(1.12); }
+
+.modal-error {
+  color: var(--danger);
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+/* ---- Mobile tweaks ---- */
+@media (max-width: 600px) {
+  #board { padding: 76px 16px 60px; }
+  .cards-grid { grid-template-columns: 1fr; gap: 18px; }
+  .modal { padding: 16px; }
+  .modal-card { padding: 22px 20px 18px; }
+}
